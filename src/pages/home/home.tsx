@@ -15,7 +15,7 @@ const Home = () => {
         <meta name="keywords" content="Sanethica, diyet, beslenme, sağlıklı yaşam, wellness" />
       </Helmet>
 
-      <img src={logo} alt="Sanethica Logo" width={480} />
+      <img src={logo} alt="Sanethica Logo" className={styles.logo} />
       <h1>Welcome to Sanethica</h1>
       <p>Your journey to a healthier life starts here.</p>
     </div>
