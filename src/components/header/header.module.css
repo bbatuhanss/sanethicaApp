@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 40px;
+  max-width: 100%;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+  color: #4b5d3a;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #6a7c50;
+}
+
+/* 📱 Mobil uyum: logo küçülür, padding daralır, metin boyutu azalır */
+@media (max-width: 600px) {
+  .header {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .link {
+    font-size: 0.9rem;
+  }
+}

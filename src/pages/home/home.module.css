@@ -1,0 +1,30 @@
+.home {
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* 📱 Mobil uyum */
+@media (max-width: 600px) {
+  .home {
+    padding: 1.5rem 1rem;
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

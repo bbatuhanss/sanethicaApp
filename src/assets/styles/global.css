@@ -1,0 +1,23 @@
+:root {
+  --green: #4b5d3a;
+  --text: #333;
+  --bg: #f8f8f8;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--green);
+}
+
+* {
+  box-sizing: border-box;
+}
