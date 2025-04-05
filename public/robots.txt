@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
+# Sanethica robots.txt
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://www.sanethica.co/sitemap.xml
