@@ -1,11 +1,16 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import styles from './home.module.css';
-import logo from '../../assets/images/main_logo.png';
+import Hero from './section/Hero';
+import Services from './services/Services';
+import Article from 'pages/article/article';
+import Footer from './footer/footer';
+import About from './about/About';
+import Blog from './blog/Blog';
 
 const Home = () => {
   return (
-    <div className={styles.home}>
+    <>
       <Helmet>
         <title>Sanethica | Sağlıklı Yaşam & Beslenme</title>
         <meta
@@ -15,10 +20,12 @@ const Home = () => {
         <meta name="keywords" content="Sanethica, diyet, beslenme, sağlıklı yaşam, wellness" />
       </Helmet>
 
-      <img src={logo} alt="Sanethica Logo" className={styles.logo} />
-      <h1>Welcome to Sanethica</h1>
-      <p>Your journey to a healthier life starts here.</p>
-    </div>
+    <Hero />
+    <About />
+    <Services />
+    <Blog />
+    <Footer />
+  </>
   );
 };
 

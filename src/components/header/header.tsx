@@ -10,8 +10,9 @@ const Header = () => {
         <img src={logo} alt="Sanethica" className={styles.logo} />
       </div>
       <nav className={styles.nav}>
-        <Link to="/" className={styles.link}>Home</Link>
-        <Link to="/about" className={styles.link}>About</Link>
+        <Link to="/" className={styles.link}>Anasayfa</Link>
+        <Link to="/about" className={styles.link}>Hakkımızda</Link>
+        <Link to="/article" className={styles.link}>Makaleler</Link>
       </nav>
     </header>
   );

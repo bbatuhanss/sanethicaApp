@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/header/header.tsx";
-import Footer from "./components/footer/footer.tsx";
-import Home from "./pages/home/home.tsx";
-import About from "./pages/about/about.tsx";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
+import Home from "./pages/home/home";
+import About from "./pages/about/about";
+import Article from "pages/article/article";
+import DiyetPage from "pages/services/DiyetPage";
+import IncelmePage from "pages/services/IncelmePage";
+import WellnessPage from "pages/services/WellnessPage";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <Router>
       <div
@@ -16,9 +26,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/article" element={<Article />} />
+            <Route path="/hizmetler/diyet" element={<DiyetPage />} />
+            <Route path="/hizmetler/incelme" element={<IncelmePage />} />
+            <Route path="/hizmetler/wellness" element={<WellnessPage />} />
           </Routes>
         </div>
-        <Footer />
       </div>
     </Router>
   );

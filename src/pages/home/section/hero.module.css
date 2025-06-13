@@ -1,0 +1,103 @@
+.hero {
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fdfdfd;
+    background: linear-gradient(to bottom right, #f0f4f0, #e4eae4);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: heroReveal 1s ease forwards;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes heroReveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .logo {
+    max-width: 500px;
+    margin-bottom: 2rem;
+    animation: floatIn 1s ease forwards;
+    animation-delay: 0.8s;
+  }
+  
+  .title {
+    font-size: 2.6rem;
+    color: #2f3e2e;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: slideUp 1s ease forwards;
+    animation-delay: 1.2s;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #444;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    animation: slideUp 1s ease forwards;
+    animation-delay: 1.5s;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  
+  .cta {
+    background-color: #4b5d3a;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1.8s;
+    margin-bottom: 5rem;
+    background: linear-gradient(to right, #6f8e59, #4b5d3a);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+  
+  /* Animasyonlar */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes floatIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Mobil uyum */
+  @media (max-width: 600px) {
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  
+    .logo {
+      max-width: 130px;
+    }
+  }
+  

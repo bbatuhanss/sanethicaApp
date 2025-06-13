@@ -1,30 +1,80 @@
-.home {
-  padding: 2rem;
+.hero {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 2rem;
+  animation: fadeIn 1.2s ease;
 }
 
 .logo {
   max-width: 480px;
-  width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  animation: floatIn 1.2s ease;
 }
 
-/* 📱 Mobil uyum */
+.title {
+  font-size: 2.6rem;
+  color: #2f3e2e;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: slideUp 1s ease forwards;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #3e3e3e;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  animation: slideUp 1.2s ease forwards;
+}
+
+.cta {
+  background-color: #4b5d3a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  animation: fadeIn 2s ease;
+}
+
+.cta:hover {
+  background-color: #3d4a2d;
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Mobil */
 @media (max-width: 600px) {
-  .home {
-    padding: 1.5rem 1rem;
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
   }
 
   .logo {
-    max-width: 200px;
-  }
-
-  h1 {
-    font-size: 1.4rem;
-  }
-
-  p {
-    font-size: 1rem;
+    max-width: 130px;
   }
 }
