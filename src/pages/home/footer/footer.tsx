@@ -11,9 +11,9 @@ const Footer = () => {
         </div>
         <div className={styles.column}>
           <h4>İletişim</h4>
-          <a>Ataşehir / İstanbul</a>
+          <a>Metropol A Blok D:38 Ataşehir / İstanbul</a>
           <a href="tel:+905555555555">+90 538 410 00 34</a>
-          <a href="mailto:info@sanethica.co">info@sanethica.co</a>
+          <a href="mailto:info@sanethica.co">info@sanethica.com</a>
         </div>
         <div className={styles.column}>
           <h4>Bizi Takip Edin</h4>
