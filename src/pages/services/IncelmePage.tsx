@@ -19,6 +19,7 @@ const IncelmePage = () => {
         ✅ Lenf drenaj<br />
         ✅ Emshape<br />
         ✅ Ozon sauna<br />
+        ✅ Crush<br />
         ✅ Smash gibi ileri teknoloji cihazlarla uygulanır.
         <br /><br />
         Bu işlemler sadece estetik değil, sağlık açısından da destekleyicidir. Lenf akışını hızlandırarak ödem atılmasına yardımcı olur ve kan dolaşımını iyileştirir.
