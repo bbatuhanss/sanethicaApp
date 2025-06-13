@@ -17,7 +17,8 @@ const IncelmePage = () => {
         <br /><br />
         ✅ G5 masajı<br />
         ✅ Lenf drenaj<br />
-        ✅ Emshape, ozon sauna<br />
+        ✅ Emshape<br />
+        ✅ Ozon sauna<br />
         ✅ Smash gibi ileri teknoloji cihazlarla uygulanır.
         <br /><br />
         Bu işlemler sadece estetik değil, sağlık açısından da destekleyicidir. Lenf akışını hızlandırarak ödem atılmasına yardımcı olur ve kan dolaşımını iyileştirir.
