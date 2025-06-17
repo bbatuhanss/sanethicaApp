@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './article.module.css';
 import glutenFreeImage from '../../assets/images/one.png';
 import altProteinImage from '../../assets/images/two.png';
+import altGluten from '../../assets/images/three.png';
 import ArticleCard from '../../components/article/articlecard';
 
 const articles = [
@@ -16,7 +17,14 @@ const articles = [
     description: 'Baklagiller ve tohumlar gibi yüksek proteinli, glutensiz içeriklerle beslenme çeşitliliğini artırın.',
     image: altProteinImage,
     url: 'https://ift.onlinelibrary.wiley.com/doi/10.1111/1750-3841.17626'
-  }  
+  },
+    {
+    title: 'Glutensiz Ürünlerde Kullanılan Alternatif Protein Kaynakları',
+    description: 'Glutensiz ürünlerde tercih edilen baklagil, tohum ve benzeri alternatif protein kaynakları hakkında bilgi edinin.',
+    image: altGluten,
+    url: 'https://dergipark.org.tr/en/download/article-file/2155021'
+  }   
+  
 ];
 
 
