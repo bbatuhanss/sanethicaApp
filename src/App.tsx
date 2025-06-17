@@ -10,6 +10,7 @@ import IncelmePage from "pages/services/IncelmePage";
 import WellnessPage from "pages/services/WellnessPage";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import BlogDetail from "pages/blog/blogDetail";
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
             <Route path="/hizmetler/diyet" element={<DiyetPage />} />
             <Route path="/hizmetler/incelme" element={<IncelmePage />} />
             <Route path="/hizmetler/wellness" element={<WellnessPage />} />
+            <Route path="/blog/:slug" element={<BlogDetail />} />
           </Routes>
         </div>
       </div>
