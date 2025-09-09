@@ -8,7 +8,8 @@ const Contact: React.FC = () => {
     { label: "Firma Adı", value: "Sanethica" },
     {
       label: "Firma Resmi Adı",
-      value: "Sanethica Sağlık ve Danışmanlık Hizmetleri Ltd. Şti.",
+      value:
+        "Sanethica Sağlıklı Yaşam Beslenme ve Diyet Danışmanlığı Limited Şirketi",
     },
     {
       label: "Telefon",
@@ -16,7 +17,7 @@ const Contact: React.FC = () => {
     },
     {
       label: "E-mail",
-      value: <a href="mailto:info@sanethica.co">info@sanethica.co</a>,
+      value: <a href="mailto:info@sanethica.com">info@sanethica.com</a>,
     },
     { label: "Adres", value: "Metropol A Blok D:38 Ataşehir / İstanbul" },
     { label: "Ülke", value: "Türkiye" },
