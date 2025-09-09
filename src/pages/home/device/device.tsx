@@ -9,54 +9,63 @@ import styles from "./device.module.css";
 const videos = [
     {
         src: "/video/biz.mp4",
+        poster: "/video/thumbs/1.png",
         label: "Bölgesel Şekillendirme",
         description: "Cihaz destekli uygulama; form ve sıkılaşmayı destekler.",
         bullets: ["30-45 dk seans", "Hedef: incelme", "Danışana özel planlama"],
     },
     {
         src: "/video/EmShape.mp4",
+        poster: "/video/thumbs/2.png",
         label: "EmShape",
         description: "Kas aktivasyonunu artırarak sıkılaşma sağlayan teknoloji.",
         bullets: ["Kas tonusu artışı", "Düşük efor, yüksek etki", "Hedef bölgesel çalışma"],
     },
     {
         src: "/video/G5 ve Smash.mp4",
+        poster: "/video/thumbs/3.png",
         label: "G5 ve Smash",
         description: "Masaj ve mekanik titreşim ile bölgesel dolaşım desteği.",
         bullets: ["Kas gevşemesi", "Kan dolaşımı hızlanması", "Selülit görünümü azaltma"],
     },
     {
         src: "/video/HAFTADA BELDEN 15 CM İNCELMEK MÜMKÜN.mp4",
+        poster: "/video/thumbs/4.png",
         label: "15 cm İncelme Programı",
         description: "Düzenli seanslarla bel çevresinde gözle görülür incelme.",
         bullets: ["Hedef: bel çevresi", "Haftalık takip", "Yoğun uygulama"],
     },
     {
         src: "/video/Lenf Drenaj.mp4",
+        poster: "/video/thumbs/5.png",
         label: "Lenf Drenaj",
         description: "Vücutta sıvı dolaşımını düzenleyen detoks destekli uygulama.",
         bullets: ["Ödem azaltma", "Bağışıklık desteği", "Dolaşımın hızlanması"],
     },
     {
         src: "/video/Ozon Sauna.mp4",
+        poster: "/video/thumbs/6.png",
         label: "Ozon Sauna",
         description: "Ozon terapisi ile detoks ve metabolizma hızlandırma.",
         bullets: ["Toksin atımı", "Cilt sağlığı", "Rahatlama etkisi"],
     },
     {
         src: "/video/ön görüşme ve muayene.mp4",
+        poster: "/video/thumbs/7.png",
         label: "Ön Görüşme & Muayene",
         description: "Danışan için kişisel analiz ve uygun program planlaması.",
         bullets: ["İlk tanışma", "Detaylı analiz", "Kişiye özel plan"],
     },
     {
         src: "/video/TANITIM.mp4",
+        poster: "/video/thumbs/8.png",
         label: "Tanıtım",
         description: "Sanethica’yı ve sunduğumuz çözümleri tanıtan genel video.",
         bullets: ["Kurumsal bakış", "Hizmetler genel tanıtım", "Güven & profesyonellik"],
     },
     {
         src: "/video/ZAYIFLAMADA ETKİLİ CİHAZLAR.mp4",
+        poster: "/video/thumbs/9.png",
         label: "Zayıflamada Etkili Cihazlar",
         description: "Zayıflamayı destekleyen cihaz ve tekniklerin genel sunumu.",
         bullets: ["Yeni nesil cihazlar", "Hızlı sonuç", "Destekleyici uygulamalar"],
@@ -99,11 +108,14 @@ const Devices: React.FC = () => {
                                 className={styles.video}
                                 muted
                                 playsInline
+                                poster={v.poster}
                                 preload="metadata"
                                 onMouseEnter={(e) => e.currentTarget.play().catch(() => { })}
                                 onMouseLeave={(e) => {
-                                    e.currentTarget.pause();
-                                    e.currentTarget.currentTime = 0;
+                                    const vid = e.currentTarget;
+                                    vid.pause();
+                                    vid.currentTime = 0;
+                                    vid.load();
                                 }}
                             >
                                 <source src={v.src} type="video/mp4" />
