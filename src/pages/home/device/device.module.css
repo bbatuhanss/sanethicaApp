@@ -182,12 +182,9 @@
         transform: scale(1);
     }
 }
-
-:global(.swiper-button-next::after),
-:global(.swiper-button-prev::after) {
-  color: #4b5d3a !important;
-  font-size: 28px !important;
-  font-weight: 700 !important;
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  display: none !important;
 }
 
 :global(.swiper-pagination-bullet) {

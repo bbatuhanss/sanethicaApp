@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import styles from "./device.module.css";
+
 const videos = [
     {
         src: "/video/biz.mp4",
@@ -72,27 +73,53 @@ const videos = [
     },
 ];
 
+const isMobile = () => window.matchMedia("(hover: none)").matches;
 
 const Devices: React.FC = () => {
     const [active, setActive] = useState<typeof videos[0] | null>(null);
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
     const modalVideoRef = useRef<HTMLVideoElement>(null);
+    const hoverRefs = useRef<HTMLVideoElement[]>([]);
 
     const closeModal = () => {
         if (modalVideoRef.current) modalVideoRef.current.pause();
+        if (activeIndex !== null) {
+            const vid = hoverRefs.current[activeIndex];
+            if (vid) {
+                vid.pause();
+                vid.currentTime = 0;
+                vid.load(); 
+            }
+        }
         setActive(null);
+        setActiveIndex(null);
     };
+
+    const handleCardClick = (i: number, v: typeof videos[0]) => {
+        if (isMobile()) {
+            const vid = hoverRefs.current[i];
+            if (vid && (vid.paused || vid.currentTime === 0)) {
+                vid.play().catch(() => { });
+                return;
+            }
+        }
+        setActive(v);
+        setActiveIndex(i);
+    };
+
     return (
         <section className={styles.section}>
             <h2 className={styles.title}>Uygulamalar ve Biz</h2>
 
             <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
+                modules={[Pagination, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={3}
                 navigation
                 pagination={{ clickable: true }}
-                autoplay={{ delay: 0, disableOnInteraction: false }}
-                speed={4500}
+                autoplay={{ delay: 1, disableOnInteraction: false }}
+                speed={7000}
+                allowTouchMove={false} 
                 loop
                 breakpoints={{
                     0: { slidesPerView: 1 },
@@ -103,8 +130,14 @@ const Devices: React.FC = () => {
             >
                 {videos.map((v, idx) => (
                     <SwiperSlide key={idx}>
-                        <div className={styles.card} onClick={() => setActive(v)}>
+                        <div
+                            className={styles.card}
+                            onClick={() => handleCardClick(idx, v)}
+                        >
                             <video
+                                ref={(el) => {
+                                    if (el) hoverRefs.current[idx] = el;
+                                }}
                                 className={styles.video}
                                 muted
                                 playsInline
@@ -115,7 +148,7 @@ const Devices: React.FC = () => {
                                     const vid = e.currentTarget;
                                     vid.pause();
                                     vid.currentTime = 0;
-                                    vid.load();
+                                    vid.load(); 
                                 }}
                             >
                                 <source src={v.src} type="video/mp4" />
@@ -131,7 +164,9 @@ const Devices: React.FC = () => {
                     <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
                         <div className={styles.modalHeader}>
                             <h3 className={styles.modalTitle}>{active.label}</h3>
-                            <button className={styles.close} onClick={closeModal}>✕</button>
+                            <button className={styles.close} onClick={closeModal}>
+                                ✕
+                            </button>
                         </div>
                         <video
                             ref={modalVideoRef}
@@ -143,7 +178,9 @@ const Devices: React.FC = () => {
                         </video>
                         <p className={styles.desc}>{active.description}</p>
                         <ul className={styles.list}>
-                            {active.bullets?.map((b, i) => <li key={i}>{b}</li>)}
+                            {active.bullets?.map((b, i) => (
+                                <li key={i}>{b}</li>
+                            ))}
                         </ul>
                     </div>
                 </div>
