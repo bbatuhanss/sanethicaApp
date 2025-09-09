@@ -7,6 +7,7 @@ import Article from 'pages/article/article';
 import Footer from './footer/footer';
 import About from './about/About';
 import Blog from './blog/Blog';
+import Devices from './device/device';
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
 
     <Hero />
     <About />
+    <Devices /> 
     <Services />
     <Blog />
     <Footer />
