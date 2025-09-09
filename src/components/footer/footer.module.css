@@ -1,9 +1,9 @@
 .footer {
-  background-color: rgba(75, 93, 58, 0.6); /* #4b5d3a yeşilin %60 opak hali */
+  background-color: rgba(75, 93, 58, 0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   color: #fff;
-  padding: 60px 20px 30px;
+  padding: 40px 20px 20px;
 }
 
 .container {
@@ -17,11 +17,11 @@
 
 .column {
   flex: 1 1 250px;
-  min-width: 200px;
+  min-width: 220px;
 }
 
 .column h4 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 12px;
   color: #fff;
 }
@@ -33,6 +33,7 @@
   font-size: 0.95rem;
   margin-bottom: 8px;
   text-decoration: none;
+  line-height: 1.5;
 }
 
 .column a:hover {
@@ -40,13 +41,13 @@
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 160px;
   margin-bottom: 1rem;
 }
 
 .bottom {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .bottom hr {
@@ -61,15 +62,42 @@
   color: #e0e0e0;
 }
 
-/* Mobil */
-@media (max-width: 768px) {
+/* Tablet */
+@media (max-width: 992px) {
   .container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 20px;
+  }
+
+  .column {
+    flex: unset;
+    min-width: unset;
+    width: 100%;
   }
 
   .logo {
     margin: 0 auto 1rem;
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 15px 15px;
+  }
+
+  .column h4 {
+    font-size: 1rem;
+  }
+
+  .column a,
+  .column p {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    max-width: 120px;
   }
 }

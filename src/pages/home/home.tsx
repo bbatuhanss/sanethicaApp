@@ -1,13 +1,14 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import styles from './home.module.css';
-import Hero from './section/Hero';
-import Services from './services/Services';
-import Article from 'pages/article/article';
-import Footer from './footer/footer';
-import About from './about/About';
-import Blog from './blog/Blog';
-import Devices from './device/device';
+import React from "react";
+import { Helmet } from "react-helmet";
+import styles from "./home.module.css";
+import Hero from "./section/Hero";
+import Services from "./services/Services";
+import Article from "pages/article/article";
+import Footer from "./footer/footer";
+import About from "./about/About";
+import Blog from "./blog/Blog";
+import Devices from "./device/device";
+import Reviews from "components/reviews/reviews";
 
 const Home = () => {
   return (
@@ -18,16 +19,20 @@ const Home = () => {
           name="description"
           content="Sanethica ile sağlıklı yaşama adım atın. Diyet, şekillenme ve wellness alanlarında uzman kadro ile yanınızdayız."
         />
-        <meta name="keywords" content="Sanethica, diyet, beslenme, sağlıklı yaşam, wellness" />
+        <meta
+          name="keywords"
+          content="Sanethica, diyet, beslenme, sağlıklı yaşam, wellness"
+        />
       </Helmet>
 
-    <Hero />
-    <About />
-    <Devices /> 
-    <Services />
-    <Blog />
-    <Footer />
-  </>
+      <Hero />
+      <About />
+      <Devices />
+      <Services />
+      <Blog />
+      <Footer />
+      <Reviews />
+    </>
   );
 };
 

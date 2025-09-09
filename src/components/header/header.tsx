@@ -13,6 +13,7 @@ const Header = () => {
         <Link to="/" className={styles.link}>Anasayfa</Link>
         <Link to="/about" className={styles.link}>Hakkımızda</Link>
         <Link to="/article" className={styles.link}>Makaleler</Link>
+         <Link to="/contact" className={styles.link}>İletişim</Link>
       </nav>
     </header>
   );
