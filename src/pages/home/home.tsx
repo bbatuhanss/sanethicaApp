@@ -1,9 +1,7 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import styles from "./home.module.css";
+import { Helmet } from "react-helmet-async";
 import Hero from "./section/Hero";
 import Services from "./services/Services";
-import Article from "pages/article/article";
 import Footer from "./footer/footer";
 import About from "./about/About";
 import Blog from "./blog/Blog";
