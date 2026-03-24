@@ -233,19 +233,161 @@ const reviews = [
     rating: 5,
     avatar: "G",
   },
+
+  // Yeni eklenenler
   {
-    author: "Ayyüce Keskinler",
-    date: "29 Temmuz 2025",
-    text: "",
+    author: "Leyla Yağdı",
+    date: "Mart 2026",
+    text: "Uzun zamandır kilo kontrolü, ödem ve genel yorgunluk şikayetlerim vardı. Sanethica ile tanıştıktan sonra beslenme düzenim tamamen değişti.",
+    rating: 5,
+    avatar: "L",
+  },
+  {
+    author: "çiğdem usta",
+    date: "Mart 2026",
+    text: "Şehir hastanesinde çalışıyorum. Sanethica ile zayıflayan doktorlarımızı görünce o zaman tamam dedim.",
+    rating: 5,
+    avatar: "Ç",
+  },
+  {
+    author: "cengiz uysal",
+    date: "Mart 2026",
+    text: "Çok uzun süredir kilo verme sürecindeydim. Sanethica’yı bulduktan sonra profesyonel yaklaşımlarına güvenerek başladım ve çok memnun kaldım.",
+    rating: 5,
+    avatar: "C",
+  },
+  {
+    author: "Ramazan Yagdı",
+    date: "Mart 2026",
+    text: "Sanethica’ya başladığım gün kendim için verdiğim en doğru kararlardan biriymiş. Sadece birkaç seansta bile gözle görülür değişim yaşadım.",
+    rating: 5,
+    avatar: "R",
+  },
+  {
+    author: "Tugce Sencan",
+    date: "Ocak 2026",
+    text: "Bir süredir hem beslenme danışmanlığı hem de zayıflama uygulamaları için geliyorum ve gerçekten çok memnun kaldım.",
+    rating: 5,
+    avatar: "T",
+  },
+  {
+    author: "Zeynep Altintas",
+    date: "Ocak 2026",
+    text: "Sanethica’dan diyetisyenlik ve ozon hizmeti alıyorum, ara ara da lenf drenaj ve Emslim işlemlerini yaptırıyorum ve hepsinden çok memnunum.",
+    rating: 5,
+    avatar: "Z",
+  },
+  {
+    author: "Irem Altintas",
+    date: "Ocak 2026",
+    text: "Sanethica’dan uzun süredir hizmet alıyorum ve gerçekten çok memnunum. Özellikle lenf drenaj ve Emslim işlemlerini düzenli yaptırıyorum.",
+    rating: 5,
+    avatar: "I",
+  },
+  {
+    author: "Seda Kartal",
+    date: "Ocak 2026",
+    text: "Çıkın çıkın gelin, keyiflenin, dinlenin, zayıflayın. Size değer veren bir ekiple çok güzel bir deneyim yaşıyorsunuz.",
+    rating: 5,
+    avatar: "S",
+  },
+  {
+    author: "Akın Sulak",
+    date: "Şubat 2026",
+    text: "Günün sonunda Sanethica’ya geldiğimde çok rahatlamış ve enerjik hissediyorum. Haftalık rutinlerimin vazgeçilmezi oldu.",
     rating: 5,
     avatar: "A",
   },
   {
-    author: "Deren Yağdı",
-    date: "28 Temmuz 2025",
-    text: "",
+    author: "tuğba doruk",
+    date: "Kasım 2025",
+    text: "İlgi süper, hijyen süper, sonuç çok iyi. Tesadüfen karşıma çıktılar ve iyi ki de çıkmışlar.",
+    rating: 5,
+    avatar: "T",
+  },
+  {
+    author: "Nazende Gortay",
+    date: "Ocak 2026",
+    text: "Bu kadar hızlı ve güzel sonuçlar elde edeceğimi hiç tahmin etmiyordum. Güler yüzlü, sıcakkanlı ekipleriyle kendimi çok güvende hissettim.",
+    rating: 5,
+    avatar: "N",
+  },
+  {
+    author: "Şebnem Tuna",
+    date: "Ocak 2026",
+    text: "Bir yıl önce yorgun, şişman ve karamsardım. Sanethica ile tanışınca önce beslenme alışkanlıklarım sonra kilom ve hayata bakışım değişti.",
+    rating: 5,
+    avatar: "Ş",
+  },
+  {
+    author: "Duygu Bülbül",
+    date: "Kasım 2025",
+    text: "Sanethica’yı arkadaşım önerdi. Gerçekten söylediği kadar varmış. Hem ekip çok profesyonel hem de çok samimi bir ortamı var.",
     rating: 5,
     avatar: "D",
+  },
+  {
+    author: "İlbey Yaşar",
+    date: "Ekim 2025",
+    text: "Sadece 1 ayda yeni bir ben oldum. Profesyonel yaklaşımları sayesinde tüm kan değerlerim düzeldi ve daha rahat nefes alıyorum.",
+    rating: 5,
+    avatar: "İ",
+  },
+  {
+    author: "Emine Alper",
+    date: "Ekim 2025",
+    text: "Kendinizi Ayyüce Hanım ve Deren Hanım’a emanet edin ve gerisini düşünmeyin.",
+    rating: 5,
+    avatar: "E",
+  },
+  {
+    author: "Güleser Yaşar",
+    date: "Ekim 2025",
+    text: "Harika sonuçlar aldım, herkese tavsiye ediyorum. İki başarılı uzman diyetisyenin sunduğu yolculuğa mutlaka katılın.",
+    rating: 5,
+    avatar: "G",
+  },
+  {
+    author: "Gizem Bilge",
+    date: "Ekim 2025",
+    text: "Ayyüce Hanım ve Deren Hanım çok ilgililer. İhtiyacım olduğunda direkt tercih ediyorum ve etkili çözümlerle mutlu ayrılıyorum.",
+    rating: 5,
+    avatar: "G",
+  },
+  {
+    author: "Yaren Gineli",
+    date: "Aralık 2025",
+    text: "İçeri girer girmez huzur veren bir ortam. Kendim için yaptığım en güzel iyilik.",
+    rating: 5,
+    avatar: "Y",
+  },
+  {
+    author: "Burcu Aktaş",
+    date: "Ekim 2025",
+    text: "Canım Sanethica ailem. Çok güzel zayıfladım, inceldim. Sağlıkla zayıflayıp yağ yakımı istiyorsanız en doğru adres.",
+    rating: 5,
+    avatar: "B",
+  },
+  {
+    author: "yasin güzel",
+    date: "Mart 2026",
+    text: "Hem kilo verdim hem de beslenme alışkanlığım değişti. Sanethica gerçekten fark yaratıyor.",
+    rating: 5,
+    avatar: "Y",
+  },
+  {
+    author: "Ayyüş Sevinç",
+    date: "Mart 2026",
+    text: "Öncelikle çok hijyenik ve tertemiz bir merkez. Zorlanmadan sağlıklı şekilde kilo verdim, çok memnunum.",
+    rating: 5,
+    avatar: "A",
+  },
+  {
+    author: "ömürcan akpınar",
+    date: "Mart 2026",
+    text: "Uzun zamandır kilo vermeye çalışıyordum ama özellikle bel çevremdeki yağlanma spora rağmen gitmiyordu. Sanethica ile tanıştıktan sonra çok memnun kaldım.",
+    rating: 5,
+    avatar: "Ö",
   },
 ];
 
@@ -277,7 +419,7 @@ const ReviewList: React.FC = () => {
   };
 
   const handleShowMore = () => {
-    setVisibleCount((prev) => prev + 6);
+    setVisibleCount((prev) => prev + 600);
   };
 
   return (
@@ -308,7 +450,11 @@ const ReviewList: React.FC = () => {
                   className={styles.googleIcon}
                 />
               </div>
-              <p className={styles.text}>{isExpanded ? r.text : shortText}</p>
+              <p
+                className={`${styles.text} ${isExpanded ? styles.expanded : ""}`}
+              >
+                {isExpanded ? r.text : shortText}
+              </p>
               {r.text.length > 150 && (
                 <span
                   className={styles.readMore}

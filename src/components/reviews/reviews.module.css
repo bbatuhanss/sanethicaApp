@@ -11,13 +11,13 @@
   margin-bottom: 30px;
 }
 
-/* Masaüstünde 2 sütun, mobilde 1 sütun */
 .grid {
   display: grid;
   gap: 24px;
   grid-template-columns: 1fr;
   max-width: 1000px;
   margin: 0 auto;
+  align-items: start;
 }
 
 @media (min-width: 768px) {
@@ -32,10 +32,13 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   padding: 20px;
   text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
+  overflow: visible;
 }
 
 .card:hover {
@@ -49,6 +52,7 @@
   margin-bottom: 12px;
   position: relative;
 }
+
 .avatar {
   width: 45px;
   height: 45px;
@@ -87,19 +91,21 @@
   color: #444;
   margin: 10px 0;
   line-height: 1.6;
-  max-height: 80px;       /* sadece ilk kısmı göster */
+  max-height: 80px;
   overflow: hidden;
   position: relative;
 }
 
-.text.expanded {
-  max-height: none;       /* daha fazla oku tıklandığında aç */
+.expanded {
+  max-height: none !important;
+  overflow: visible;
 }
 
 .stars {
   color: #f4b400;
   font-size: 1rem;
   margin-top: auto;
+  padding-top: 12px;
 }
 
 .moreBtn {
@@ -125,6 +131,9 @@
   color: #666;
   cursor: pointer;
   transition: color 0.2s;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .readMore:hover {
