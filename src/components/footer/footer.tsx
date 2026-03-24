@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from './footer.module.css';
-import logo from '../../assets/images/main_logo.png';
+import React from "react";
+import styles from "./footer.module.css";
+import logo from "../../assets/images/main_logo.png";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
         <div className={styles.column}>
           <h4>İletişim</h4>
-          <a>Metropol A Blok D:38 Ataşehir / İstanbul</a>
+          <p>Metropol A Blok D:38 Ataşehir / İstanbul</p>
           <a href="tel:+905555555555">+90 538 410 00 34</a>
           <a href="mailto:info@sanethica.co">info@sanethica.com</a>
         </div>

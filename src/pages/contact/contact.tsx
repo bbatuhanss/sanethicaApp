@@ -50,6 +50,7 @@ const Contact: React.FC = () => {
 
         <div className={styles.mapWrapper}>
           <iframe
+            title="Sanethica konum haritası"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6002.1234567890!2d29.1227317!3d40.9941286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac99600c26d05%3A0xd72543c63c2c9a8b!2sSanethica!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str"
             width="100%"
             height="400"
