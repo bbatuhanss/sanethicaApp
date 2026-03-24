@@ -1,8 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import styles from "./device.module.css";
@@ -127,7 +126,6 @@ const Devices: React.FC = () => {
         modules={[Pagination, Autoplay]}
         spaceBetween={30}
         slidesPerView={3}
-        navigation
         pagination={{ clickable: true }}
         autoplay={{ delay: 1, disableOnInteraction: false }}
         speed={7000}
