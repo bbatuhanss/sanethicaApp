@@ -45,7 +45,7 @@ const services = [
     tag: "Masaj",
     title: "Masaj Uygulamaları",
     description:
-      " Ağrıları azaltma, pürüzsüz görünüm sağlama, ödem giderilmesi, dolaşım desteklenmesi ",
+      "Ağrı yönetimi, dolaşım iyileştirmesi sağlama, ödem giderilmesi, dolaşım desteklenmesi ",
     points: [" Lenfödem masajı ", "Lipödem masajı", "Selülit masajı "],
     link: "/hizmetler/massage",
   },
@@ -60,7 +60,7 @@ const Services = () => (
           Size özel <em>çözümler</em>
         </h2>
         <p className={styles.subtitle}>
-          Üç temel alanda uzman kadromuzla yanınızdayız.
+          Dört temel alanda uzman kadromuzla yanınızdayız.
         </p>
       </div>
 
