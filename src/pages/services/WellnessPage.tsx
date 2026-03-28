@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import wellnessImg from "../../assets/images/wellnessimage.png";
 import styles from "./detail.module.css";
 
 const WellnessPage = () => {

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import incelmeImg from "../../assets/images/bodyimage.png";
 import styles from "./detail.module.css";
 
 const IncelmePage = () => {
