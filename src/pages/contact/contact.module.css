@@ -4,7 +4,6 @@
   font-family: inherit;
   width: 100%;
   margin: 0 auto;
-  width: 100%; 
 }
 
 .title {
@@ -52,38 +51,75 @@
   margin-top: 40px;
 }
 
+.formTitle {
+  font-size: 1.4rem;
+  color: #4b5d3a;
+  margin-bottom: 18px;
+}
+
 .contactForm {
   display: flex;
   flex-direction: column;
 }
+
 .contactForm input,
 .contactForm textarea {
   margin-bottom: 12px;
-  padding: 10px;
+  padding: 12px 14px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 1rem;
   width: 100%;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #4b5d3a;
+  box-shadow: 0 0 0 3px rgba(75, 93, 58, 0.08);
+}
+
+.contactForm textarea {
+  resize: vertical;
+}
+
 .contactForm button {
   align-self: flex-start;
   background: #4b5d3a;
   color: #fff;
-  padding: 10px 16px;
+  padding: 12px 18px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
+  transition:
+    background 0.2s ease,
+    opacity 0.2s ease;
 }
+
 .contactForm button:hover {
   background: #3a4b2d;
+}
+
+.contactForm button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.resultMessage {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  color: #4b5d3a;
 }
 
 .mapWrapper {
   margin-top: 40px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* Tablet ve mobil uyumu */
@@ -119,11 +155,12 @@
   .contactForm input,
   .contactForm textarea {
     font-size: 0.9rem;
-    padding: 8px;
+    padding: 10px;
   }
 
   .contactForm button {
     font-size: 0.9rem;
-    padding: 8px 14px;
+    padding: 10px 14px;
+    width: 100%;
   }
 }

@@ -7,6 +7,7 @@ import Article from "pages/article/article";
 import DiyetPage from "pages/services/DiyetPage";
 import IncelmePage from "pages/services/IncelmePage";
 import WellnessPage from "pages/services/WellnessPage";
+import MessagePage from "pages/services/MassagePage";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BlogDetail from "pages/blog/blogDetail";
@@ -33,6 +34,7 @@ function App() {
             <Route path="/hizmetler/diyet" element={<DiyetPage />} />
             <Route path="/hizmetler/incelme" element={<IncelmePage />} />
             <Route path="/hizmetler/wellness" element={<WellnessPage />} />
+            <Route path="/hizmetler/massage" element={<MessagePage />} />
             <Route path="/blog/:slug" element={<BlogDetail />} />
           </Routes>
           <WhatsappButton />

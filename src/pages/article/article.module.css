@@ -1,18 +1,50 @@
-.container {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+.section {
+  padding: 6.5rem 2rem;
+  background:
+    radial-gradient(circle at top, rgba(168, 200, 138, 0.06), transparent 25%),
+    linear-gradient(180deg, #f8f6f1 0%, #f3efe6 100%);
 }
 
-.header {
-  font-size: 2rem;
-  margin-bottom: 34px;
+.headerWrap {
+  max-width: 760px;
+  margin: 0 auto 3.5rem;
   text-align: center;
-  color: #4b5d3a;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6d7d56;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  margin: 0 0 1rem;
+  color: #1f231a;
+}
+
+.title em {
+  font-style: italic;
+  color: #6d7d56;
+}
+
+.subtitle {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #6f7268;
+  font-weight: 300;
 }
 
 .grid {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
 }

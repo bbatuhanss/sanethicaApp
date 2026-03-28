@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import wellnessImg from "../../assets/images/wellnessimage.png";
+import massageImg from "../../assets/images/massageimage.png";
 import styles from "./detail.module.css";
 
-const WellnessPage = () => {
+const MassagePage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -25,73 +25,96 @@ const WellnessPage = () => {
     };
   }, []);
 
-  const services = [
+  const treatments = [
     {
-      icon: "🧘",
-      title: "Meditasyon & Nefes Terapileri",
-      desc: "Stres azaltma, zihinsel berraklık ve duygusal dengeyi hedefleyen rehberli meditasyon seansları",
-    },
-    {
-      icon: "🌿",
-      title: "Mindfulness Çalışmaları",
-      desc: "Anı yaşama, farkındalık ve benlik kabulu çalışmalarıyla yaşam kalitesini yükseltme",
-    },
-    {
-      icon: "🌱",
-      title: "Bitkisel Detokslar",
-      desc: "Organik bitkilerin doğal temizleme etkisiyle vücut atıklarının zararsız uzaklaştırılması",
+      icon: "💆",
+      title: "Lenfödem Masajı",
+      desc: "Lenfatik sistem drenajı ile ödem azaltma, dolaşım iyileştirme ve ağrı giderme",
     },
     {
       icon: "💧",
-      title: "İyonik Ayak Detoksu",
-      desc: "İyonik teknoloji ile lenfatik sistem aktivasyonu, ödemi azaltma ve enerji iyileştirme",
+      title: "Lipödem Masajı",
+      desc: "Yağ dokusu hastalığında spesifik masaj teknikleriyle ağrı azaltma ve sirkülasyon destekleme",
     },
     {
-      icon: "⚡",
-      title: "EMShape & Cihaz Terapileri",
-      desc: "Elektromanyetik teknoloji ile metabolizm hızlandırma ve selülit azaltma",
+      icon: "✨",
+      title: "Selülit Masajı",
+      desc: "Bağ dokularını gevşetme, kan akışını artırma ve selülit görünümü azaltma",
     },
     {
-      icon: "🔥",
-      title: "Infrared Sauna Seansları",
-      desc: "Derinlemesine ısıtma, detoks, ağrı azaltma ve iyileştirme",
+      icon: "🧘",
+      title: "Terapötik Masaj",
+      desc: "Kas gerginliği, kronik ağrılar ve postüral sorunları tedavi etme",
+    },
+    {
+      icon: "🏃",
+      title: "Spor Masajı",
+      desc: "Atletik performans, yaralanma iyileştirme ve kasıt kaynakları iyileştirme",
+    },
+    {
+      icon: "🌿",
+      title: "Aromaterapi Masajı",
+      desc: "Doğal yağlarla terapötik masaj, relaksasyon ve duygusal dengeleme",
     },
   ];
 
   const benefits = [
     {
-      title: "Psikiyatrik Fayda",
+      title: "Ağrı & Rahatlık",
       items: [
-        "Stres ve anksiyete azaltma",
-        "Uyku kalitesi iyileştirme",
-        "Duygudurum düzenlemesi",
+        "Kronik ağrı yönetimi",
+        "Kas gerginliği azaltma",
+        "Postüral sorunları düzeltme",
       ],
     },
     {
-      title: "Fizyolojik Fayda",
+      title: "Dolaşım & Detoks",
       items: [
-        "Bağışıklık sistem güçlendirme",
-        "Enerji seviyesi artırma",
-        "Ağrı ve inflamasyonu azaltma",
+        "Kan dolaşımı iyileştirme",
+        "Lenfatik sistem aktivasyonu",
+        "Ödem ve şişkinlik azaltma",
       ],
     },
     {
-      title: "Estetik Fayda",
+      title: "Estetik & Wellness",
       items: [
-        "Cilt sağlığı ve parlaklığı",
+        "Cilt elastikiyeti artırma",
         "Selülit görünümü azaltma",
-        "Vücut sağlığı iyileştirmesi",
+        "Genel rahatlık ve huzur",
       ],
+    },
+  ];
+
+  const process = [
+    {
+      step: "1",
+      title: "Başlangıç Değerlendirmesi",
+      desc: "Vücut alanlarını analiz ederek masaj ihtiyaçlarını belirleme",
+    },
+    {
+      step: "2",
+      title: "Masaj Planı",
+      desc: "Soruna uygun masaj tekniği ve sıkılığının belirlenmesi",
+    },
+    {
+      step: "3",
+      title: "Seans",
+      desc: "Profesyonel terapist tarafından 45-60 dakika masaj uygulaması",
+    },
+    {
+      step: "4",
+      title: "Takip",
+      desc: "Düzenli seanslarla iyileştirme ve ön kurtarma sağlama",
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Wellness Uygulamaları | Sanethica</title>
+        <title>Masaj Uygulamaları | Sanethica</title>
         <meta
           name="description"
-          content="Meditasyon, detoks, sauna ve cihaz terapileri ile beden-zihin-ruh dengesini sağlayın."
+          content="Terapötik masaj, lenfödem, lipödem ve spor masajı uygulamaları ile ağrı yönetimi ve rahatlık."
         />
       </Helmet>
 
@@ -100,13 +123,13 @@ const WellnessPage = () => {
         <section className={styles.hero}>
           <div className={styles.heroOverlay} />
           <div className={styles.heroContent} data-reveal>
-            <span className={styles.heroTag}>Holistik Sağlık</span>
+            <span className={styles.heroTag}>Terapötik Masaj</span>
             <h1 className={styles.heroTitle}>
-              Wellness <em>Uygulamaları</em>
+              Masaj <em>Uygulamaları</em>
             </h1>
             <p className={styles.heroSub}>
-              Bedenin, zihnin ve ruhun dengesini kuran bütünsel wellness
-              deneyimi
+              Ağrı yönetimi, dolaşım iyileştirmesi ve bütünsel wellness için
+              profesyonel masaj
             </p>
             <button
               className={styles.heroCta}
@@ -120,8 +143,8 @@ const WellnessPage = () => {
         {/* IMAGE SECTION */}
         <section className={styles.imageSection} data-reveal>
           <img
-            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773"
-            alt="Wellness Uygulamaları"
+            src={massageImg}
+            alt="Masaj Uygulamaları"
             className={styles.mainImage}
             loading="lazy"
           />
@@ -130,40 +153,39 @@ const WellnessPage = () => {
         {/* INTRODUCTION */}
         <section className={styles.intro} data-reveal>
           <div className={styles.introContent}>
-            <span className={styles.tag}>Wellness Nedir?</span>
-            <h2>Beden, Zihin & Ruh Sinerji</h2>
+            <span className={styles.tag}>Nedir Masaj?</span>
+            <h2>Terapötik Dokunuş</h2>
             <p>
-              Wellness, sadece hastalık olmamaktan fazlasıdır. Fiziksel güç,
-              duygusal istikrar, zihinsel açıklık ve ruhsal bağlantının harmonik
-              bir kombinasyonudur.
+              Masaj, sadece rahatlık değil; terapötik bir yöntemdir. Kas
+              gerginliğini azaltır, kan dolaşımını iyileştirir, ödem giderir ve
+              mental stresı hafifletir.
             </p>
             <p>
-              Modern stres, uyku problemleri, çevresel toksinler ve duygusal
-              yük, bu dengeyi bozarak kronik hastalıklara ve tükenmişliğe yol
-              açmaktadır.
+              Lenfödem, lipödem, kronik ağrılar ve postüral sorunlara karşı
+              bilimsel ve etkili bir yaklaşım sunuyoruz.
             </p>
           </div>
         </section>
 
-        {/* SERVICES */}
+        {/* TREATMENTS */}
         <section className={styles.features} data-reveal>
           <div className={styles.featuresWrap}>
             <div className={styles.featuresHead}>
               <span className={styles.tag}>Hizmetlerimiz</span>
-              <h2>Wellness Uygulamaları</h2>
+              <h2>Masaj Türleri</h2>
             </div>
 
             <div className={styles.featuresGrid}>
-              {services.map((service, i) => (
+              {treatments.map((treatment, i) => (
                 <div
-                  key={service.title}
+                  key={treatment.title}
                   className={styles.featureCard}
                   data-reveal
                   style={{ transitionDelay: `${i * 0.08}s` }}
                 >
-                  <div className={styles.featureIcon}>{service.icon}</div>
-                  <h3>{service.title}</h3>
-                  <p>{service.desc}</p>
+                  <div className={styles.featureIcon}>{treatment.icon}</div>
+                  <h3>{treatment.title}</h3>
+                  <p>{treatment.desc}</p>
                 </div>
               ))}
             </div>
@@ -174,7 +196,7 @@ const WellnessPage = () => {
         <section className={styles.benefits} data-reveal>
           <div className={styles.benefitsWrap}>
             <span className={styles.tag}>Faydalar</span>
-            <h2>Wellness'ın Etkileri</h2>
+            <h2>Masajın Etkileri</h2>
 
             <div className={styles.benefitsGrid}>
               {benefits.map((benefit) => (
@@ -198,20 +220,43 @@ const WellnessPage = () => {
           </div>
         </section>
 
+        {/* PROCESS */}
+        <section className={styles.process} data-reveal>
+          <div className={styles.processWrap}>
+            <span className={styles.tag}>Süreç</span>
+            <h2>Masaj Seansı Nasıl İlerlediğini</h2>
+
+            <div className={styles.processSteps}>
+              {process.map((item, i) => (
+                <div
+                  key={item.step}
+                  className={styles.processStep}
+                  data-reveal
+                  style={{ transitionDelay: `${i * 0.1}s` }}
+                >
+                  <div className={styles.stepNum}>{item.step}</div>
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CTA SECTION */}
         <section className={styles.cta} data-reveal>
           <div className={styles.ctaInner}>
-            <h2>Sağlıklı Dönüşüme Hazır mısınız?</h2>
+            <h2>Ağrısız Yaşamı Bulun</h2>
             <p>
-              Wellness sadece bir tedavi değil, yaşam tarzı değişikliğidir. Bize
-              katılarak kendi en iyi versiyonunuzu keşfedin.
+              Profesyonel masaj terapistlerimiz, kronik ağrılarınızı azaltmak ve
+              wellness yolculuğunuzu desteklemek için buradayız.
             </p>
             <div className={styles.ctaButtons}>
               <button
                 className={styles.primaryBtn}
                 onClick={() => navigate("/contact")}
               >
-                Seans Başlat
+                İlk Seans Al
               </button>
               <button
                 className={styles.secondaryBtn}
@@ -234,4 +279,4 @@ const WellnessPage = () => {
   );
 };
 
-export default WellnessPage;
+export default MassagePage;
