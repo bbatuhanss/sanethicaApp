@@ -5,7 +5,7 @@ import logo from "../../../assets/images/main_logo.png";
 
 const stats = [
   { val: "1000+", label: "Mutlu Danışan" },
-  { val: "3", label: "Hizmet Alanı" },
+  { val: "4", label: "Hizmet Alanı" },
   { val: "%98", label: "Başarı Oranı" },
 ];
 

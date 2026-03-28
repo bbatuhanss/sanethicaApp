@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import styles from "./detail.module.css";
+import incelme from "../../assets/images/incelme.png";
 
 const IncelmePage = () => {
   const navigate = useNavigate();
@@ -142,7 +143,7 @@ const IncelmePage = () => {
         {/* IMAGE SECTION */}
         <section className={styles.imageSection} data-reveal>
           <img
-            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5"
+            src={incelme}
             alt="Bölgesel İncelme"
             className={styles.mainImage}
             loading="lazy"
