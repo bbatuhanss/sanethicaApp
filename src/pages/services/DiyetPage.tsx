@@ -83,11 +83,7 @@ const DiyetPage = () => {
   return (
     <>
       <Helmet>
-        <title>Bireysel Diyet Desteği | Sanethica</title>
-        <meta
-          name="description"
-          content="Kişiye özel beslenme programları, vücut analizi ve haftalık takip ile sağlıklı yaşam yolculuğuna başlayın."
-        />
+        <title>Sanethica</title>
       </Helmet>
 
       <div className={styles.page}>
@@ -126,7 +122,7 @@ const DiyetPage = () => {
         <section className={styles.intro} data-reveal>
           <div className={styles.introContent}>
             <span className={styles.tag}>Neden Gerekli?</span>
-            <h2>Sağlıklı Beslenme, Sağlıklı Yaşam</h2>
+
             <p>
               Günümüzün yoğun yaşam temposu ve yanlış beslenme alışkanlıkları,
               vücut ve zihinsel sağlığımızı olumsuz etkiliyor. Hızlı tüketilen

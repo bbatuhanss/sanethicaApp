@@ -12,15 +12,9 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Sanethica | Sağlıklı Yaşam & Beslenme</title>
-        <meta
-          name="description"
-          content="Sanethica ile sağlıklı yaşama adım atın. Diyet, şekillenme ve wellness alanlarında uzman kadro ile yanınızdayız."
-        />
-        <meta
-          name="keywords"
-          content="Sanethica, diyet, beslenme, sağlıklı yaşam, wellness"
-        />
+        <title>Sanethica</title>
+        <meta name="description" content="Sanethica" />
+        <meta name="keywords" content="Sanethica" />
       </Helmet>
 
       <Hero />

@@ -58,12 +58,6 @@ const Blog = () => (
     <div className={styles.inner}>
       <div className={styles.header}>
         <span className={styles.tag}>Blog</span>
-        <h2 className={styles.title}>
-          Sağlıklı yaşam <em>rehberi</em>
-        </h2>
-        <p className={styles.subtitle}>
-          Uzmanlarımızdan güncel beslenme ve wellness içerikleri.
-        </p>
       </div>
 
       <div className={styles.grid}>

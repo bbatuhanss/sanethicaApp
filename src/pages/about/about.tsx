@@ -82,10 +82,7 @@ const About = () => {
     <>
       <Helmet>
         <title>Hakkımızda | Sanethica</title>
-        <meta
-          name="description"
-          content="Sanethica uzman diyetisyen kadrosu ile klinik beslenme, wellness ve kişiye özel sağlıklı yaşam danışmanlığı sunar."
-        />
+        <meta name="description" content="Sanethica." />
         <link
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
@@ -105,12 +102,6 @@ const About = () => {
           </div>
 
           <div className={styles.heroInner}>
-            <h1 className={styles.heroTitle}>
-              Sağlıklı yaşam
-              <br />
-              <em>bilim ile başlar</em>
-            </h1>
-
             <p className={styles.heroSub}>
               Uzman diyetisyen kadromuzla klinik beslenme, bölgesel incelme ve
               wellness hizmetlerini estetik, etik ve bilimsel bir yaklaşımla

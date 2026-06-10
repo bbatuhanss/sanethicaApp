@@ -33,15 +33,6 @@ const Article: React.FC = () => (
   <section className={styles.section}>
     <div className={styles.headerWrap}>
       <span className={styles.tag}>Sanethica Journal</span>
-
-      <h2 className={styles.title}>
-        Bilimsel içerikler ve <em>beslenme rehberleri</em>
-      </h2>
-
-      <p className={styles.subtitle}>
-        Güncel araştırmalar, beslenme yaklaşımları ve sağlıklı yaşam üzerine
-        derlenmiş içerikleri keşfedin.
-      </p>
     </div>
 
     <div className={styles.grid}>

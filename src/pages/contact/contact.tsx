@@ -19,8 +19,7 @@ const Contact: React.FC = () => {
     { label: "Firma Adı", value: "Sanethica" },
     {
       label: "Firma Resmi Adı",
-      value:
-        "Sanethica Sağlıklı Yaşam Beslenme ve Diyet Danışmanlığı Limited Şirketi",
+      value: "",
     },
     {
       label: "Telefon",

@@ -53,12 +53,7 @@ const AboutSection = () => (
           <br />
           <em>doğru adres</em>
         </h2>
-        <p className={styles.desc}>
-          Sanethica, 2025 yılında sağlıklı yaşamı yalnızca kilo vermekle değil;
-          beden, zihin ve ruh bütünlüğüyle mümkün olan bir denge olarak
-          tanımlayan bir vizyon etrafında kuruldu. Uzman kadromuz ve etik
-          yaklaşımımızla her danışanımıza özel program sunuyoruz.
-        </p>
+        <p className={styles.desc}>Sanethica</p>
 
         <div className={styles.feats}>
           {[

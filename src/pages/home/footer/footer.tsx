@@ -8,9 +8,6 @@ const Footer = () => (
     <div className={styles.inner}>
       <div className={styles.brand}>
         <img src={logo} alt="Sanethica" className={styles.logo} />
-        <p className={styles.tagline}>
-          Sağlıklı yaşamı bilim, etik ve bütünsel yaklaşımla sunuyoruz.
-        </p>
 
         <a
           href="https://www.instagram.com/sanethica/"
@@ -24,7 +21,6 @@ const Footer = () => (
 
       <div className={styles.col}>
         <h4>Hizmetler</h4>
-        <Link to="/hizmetler/diyet">Bireysel Diyet</Link>
         <Link to="/hizmetler/incelme">Bölgesel İncelme</Link>
         <Link to="/hizmetler/wellness">Wellness</Link>
         <Link to="/article">Blog & Makaleler</Link>
