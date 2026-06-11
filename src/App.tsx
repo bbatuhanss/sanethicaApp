@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import AOS from "aos";
 import MaintenancePage from "pages/maintenance/MaintenancePage";
 
