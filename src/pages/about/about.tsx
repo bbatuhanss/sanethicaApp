@@ -3,47 +3,44 @@ import { Helmet } from "react-helmet-async";
 import styles from "./about.module.css";
 import Footer from "components/footer/footer";
 
-const team = [
-  {
-    name: "Uzm.Dyt. Ayyüce Keskinler Sevinç",
-    title: "Klinik Diyetisyen & Kurucu Ortağı",
-    desc: "Medipol Üniversitesi Beslenme ve Diyetetik Bölümü mezunu. 8+ yıl klinik beslenme deneyimi. Metabolik sendrom, tip 2 diyabet yönetimi, spor beslenmesi ve kişiye özel beslenme programları konularında uzman. Danışanlarının yaşam tarzını kalıcı şekilde dönüştürmede odaklanmış.",
-    emoji: "🌿",
-    tags: ["Metabolik Sağlık", "Diyabet Yönetimi", "Klinik Beslenme"],
-    edu: "Medipol Üniversitesi",
-    exp: "8+ Yıl",
-  },
-  {
-    name: "Uzm.Dyt. Sevgi Deren Yağdı Çelik",
-    title: "Klinik Diyetisyen & Kurucu Ortağı",
-    desc: "Acıbadem Üniversitesi Beslenme ve Diyetetik Bölümü mezunu. Fonksiyonel tıp beslenme uzmanı, bağırsak mikrobiyomu ve yaşam tarzı tıbbı alanında sertifikalı. Wellness ve bölgesel incelme programlarında 8+ yıl deneyim.",
-    emoji: "✨",
-    tags: ["Fonksiyonel Tıp Beslenme", "Wellness", "Mikrobiyom"],
-    edu: "Acıbadem Üniversitesi",
-    exp: "8+ Yıl",
-  },
-];
-
 const values = [
   {
     icon: "◎",
     label: "Bütünsel Yaklaşım",
-    desc: "Beden, zihin ve ruhu bir bütün olarak ele alıyor, süreci yalnızca kilo odaklı değil yaşam kalitesi odaklı kurguluyoruz.",
+    desc: "Beden, zihin ve ruhu bir bütün olarak ele alıyor; süreci yalnızca görünüş odaklı değil, yaşam kalitesi odaklı kurguluyoruz.",
   },
   {
     icon: "◈",
-    label: "Bilimsel Temeller",
-    desc: "Tüm önerilerimiz kanıta dayalı beslenme bilimi ve güncel klinik yaklaşımlar doğrultusunda hazırlanır.",
+    label: "Uzman Dokunuş",
+    desc: "Tüm uygulamalarımız alanında deneyimli uzmanlar tarafından, güncel yöntemlerle yürütülür.",
   },
   {
     icon: "◇",
     label: "Kişisel Odak",
-    desc: "Her danışanın yaşam ritmi, sağlık öyküsü ve hedefi farklıdır; planlarımız da buna göre şekillenir.",
+    desc: "Her danışanın vücut yapısı, yaşam ritmi ve hedefi farklıdır; programlarımız da buna göre şekillenir.",
   },
   {
     icon: "◉",
-    label: "Sürdürülebilirlik",
-    desc: "Geçici listeler değil, günlük hayata uyum sağlayan sürdürülebilir alışkanlıklar kazandırmayı hedefleriz.",
+    label: "Kalıcı Sonuçlar",
+    desc: "Geçici çözümler değil, düzenli bakım ve doğru uygulama ile kalıcı dönüşüm hedefliyoruz.",
+  },
+];
+
+const services = [
+  {
+    icon: "✦",
+    label: "Bölgesel İncelme",
+    desc: "EmShape, G5 ve ozon sauna teknolojileriyle hedef bölgede sıkılaşma ve şekillendirme.",
+  },
+  {
+    icon: "✦",
+    label: "Masaj Terapisi",
+    desc: "Lenf drenaj, lipödem ve selülit masajıyla ödem giderme, dolaşım desteği ve derin rahatlama.",
+  },
+  {
+    icon: "✦",
+    label: "Wellness Programları",
+    desc: "Stres yönetimi, detoks ve yaşam tarzı düzenlemeleriyle bütünsel iyilik hâli.",
   },
 ];
 
@@ -54,7 +51,7 @@ const stats = [
 
 const storyMeta = [
   ["Ataşehir", "İstanbul"],
-  ["2", "Kurucusu"],
+  ["2025", "Kuruluş"],
 ];
 
 const About = () => {
@@ -81,10 +78,10 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Hakkımızda | Sanethica</title>
+        <title>Hakkımızda | Sanethica Beauty & Wellness</title>
         <meta
           name="description"
-          content="Sanethica uzman diyetisyen kadrosu ile klinik beslenme, wellness ve kişiye özel sağlıklı yaşam danışmanlığı sunar."
+          content="Sanethica uzman kadrosu ile bölgesel incelme, masaj ve kişiye özel wellness programları sunar. Ataşehir, İstanbul."
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap"
@@ -93,6 +90,7 @@ const About = () => {
       </Helmet>
 
       <main className={styles.page}>
+        {/* HERO */}
         <section className={styles.hero}>
           <div className={styles.heroBg} />
           <div className={styles.heroNoise} />
@@ -106,22 +104,21 @@ const About = () => {
 
           <div className={styles.heroInner}>
             <h1 className={styles.heroTitle}>
-              Sağlıklı yaşam
+              Kendinize en güzel
               <br />
-              <em>bilim ile başlar</em>
+              <em>yatırımı yapın</em>
             </h1>
 
             <p className={styles.heroSub}>
-              Uzman diyetisyen kadromuzla klinik beslenme, bölgesel incelme ve
-              wellness hizmetlerini estetik, etik ve bilimsel bir yaklaşımla
-              sunuyoruz.
+              Uzman kadromuzla bölgesel incelme, masaj ve wellness hizmetlerini
+              estetik, etik ve özenli bir yaklaşımla sunuyoruz.
             </p>
 
             <div className={styles.heroActions}>
               <a href="/contact" className={styles.heroPrimaryBtn}>
                 Randevu Al
               </a>
-              <a href="/services" className={styles.heroSecondaryBtn}>
+              <a href="/contact" className={styles.heroSecondaryBtn}>
                 Hizmetleri İncele
               </a>
             </div>
@@ -144,16 +141,17 @@ const About = () => {
           </div>
         </section>
 
+        {/* HİKAYEMİZ */}
         <section className={styles.story}>
           <div className={styles.storyGrid}>
             <div className={styles.storyCard} data-reveal>
               <div className={styles.scNoise} />
-              <span className={styles.scLeaf}>🌱</span>
+              <span className={styles.scLeaf}>✨</span>
 
               <p className={styles.scQuote}>
-                "Sağlık; sadece kilo değil,
+                "Güzellik; dışarıdan değil,
                 <br />
-                denge, güç ve huzurdur."
+                içeriden gelir."
               </p>
 
               <span className={styles.scBy}>— Sanethica Felsefesi</span>
@@ -176,25 +174,23 @@ const About = () => {
             </div>
 
             <div className={styles.storyText} data-reveal>
-              <span className={styles.tag}>Hakkımızda</span>
+              <span className={styles.tag}>Hikayemiz</span>
 
               <h2 className={styles.h2}>
                 Neden <em>Sanethica</em>?
               </h2>
 
               <p>
-                Sanethica, 2025 yılında kurucuları Uzm.Dyt. Ayyüce Keskinler
-                Sevinç ve Uzm.Dyt. Sevgi Deren Yağdı Çelik tarafından sağlıklı
-                yaşamı yalnızca kilo vermekle sınırlamayan; beden, zihin ve
-                yaşam düzenini birlikte ele alan bütünsel bir yaklaşımla
-                kuruldu.
+                Sanethica, 2025 yılında güzelliği yalnızca görünüşle değil;
+                beden, zihin ve özgüven bütünlüğüyle tanımlayan bir vizyon
+                etrafında kuruldu. Her danışanın kendini en iyi hissedebileceği
+                bir alan yaratmak için yola çıktık.
               </p>
 
               <p>
                 "Sante" sağlık, "Ethica" ise etik yaklaşımı temsil eder.
-                Ataşehir'de yer alan kliniğimizde, biz danışanlarımıza katı
-                listeler değil; sürdürülebilir, gerçek hayatla uyumlu bir yaşam
-                biçimi sunmayı hedefliyoruz.
+                Ataşehir'deki merkezimizde son teknoloji cihazlar ve uzman
+                dokunuşla her danışanımıza özel bir dönüşüm deneyimi sunuyoruz.
               </p>
 
               <a href="/contact" className={styles.btn}>
@@ -204,25 +200,26 @@ const About = () => {
           </div>
         </section>
 
+        {/* HİZMETLERİMİZ */}
         <section className={styles.team}>
           <div className={styles.teamWrap}>
             <div className={styles.teamHead} data-reveal>
-              <span className={styles.tag}>Uzman Kadromuz</span>
+              <span className={styles.tag}>Ne Sunuyoruz?</span>
 
               <h2 className={styles.h2}>
-                Alanında kanıtlanmış <em>diyetisyenler</em>
+                Üç alanda <em>uzman hizmet</em>
               </h2>
 
               <p className={styles.teamSub}>
-                Güçlü akademik altyapı, klinik deneyim ve danışan odaklı
-                yaklaşım ile sağlıklı dönüşüm sürecinizi güvenle planlıyoruz.
+                Son teknoloji cihazlar ve deneyimli kadromuzla bedeninizi en iyi
+                hâline kavuşturuyoruz.
               </p>
             </div>
 
             <div className={styles.mainTeamGrid}>
-              {team.map((member, i) => (
+              {services.map((service, i) => (
                 <div
-                  key={member.name}
+                  key={service.label}
                   className={styles.mainTeamCard}
                   data-reveal
                   style={{ transitionDelay: `${i * 0.15}s` }}
@@ -231,43 +228,17 @@ const About = () => {
 
                   <div className={styles.mtTop}>
                     <div className={styles.mtAvatarWrap}>
-                      <div className={styles.mtAvatar}>{member.emoji}</div>
+                      <div className={styles.mtAvatar}>{service.icon}</div>
                     </div>
-
                     <div className={styles.mtMeta}>
-                      <span className={styles.mtTitle}>{member.title}</span>
-                      <h3 className={styles.mtName}>{member.name}</h3>
+                      <h3 className={styles.mtName}>{service.label}</h3>
                     </div>
                   </div>
 
-                  <p className={styles.mtDesc}>{member.desc}</p>
-
-                  <div className={styles.mtStats}>
-                    <div className={styles.mtStat}>
-                      <strong>{member.exp}</strong>
-                      <span>Deneyim</span>
-                    </div>
-
-                    <div className={styles.mtStatDiv} />
-
-                    <div className={styles.mtStatDiv} />
-
-                    <div className={styles.mtStat}>
-                      <strong>🎓</strong>
-                      <span>{member.edu.split(" ")[0]}</span>
-                    </div>
-                  </div>
-
-                  <div className={styles.mtTags}>
-                    {member.tags.map((tag) => (
-                      <span key={tag} className={styles.mtTag}>
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+                  <p className={styles.mtDesc}>{service.desc}</p>
 
                   <a href="/contact" className={styles.mtCta}>
-                    Bu Uzmanla Görüş →
+                    Randevu Al →
                   </a>
                 </div>
               ))}
@@ -275,6 +246,7 @@ const About = () => {
           </div>
         </section>
 
+        {/* İLKELERİMİZ */}
         <section className={styles.values}>
           <div className={styles.valuesWrap}>
             <div className={styles.valuesHead} data-reveal>
@@ -299,18 +271,19 @@ const About = () => {
           </div>
         </section>
 
+        {/* CTA */}
         <section className={styles.cta} data-reveal>
           <div className={styles.ctaOverlay} />
           <div className={styles.ctaWrap}>
             <span className={styles.ctaEyebrow}>Hemen Başlayın</span>
 
             <h2>
-              Değişim için <em>doğru adres</em>
+              Dönüşüm için <em>doğru adres</em>
             </h2>
 
             <p>
               İlk görüşme ile sürecinizi birlikte değerlendirelim, size en uygun
-              beslenme ve wellness planını oluşturalım.
+              estetik ve wellness programını oluşturalım.
             </p>
 
             <div className={styles.ctaBtns}>

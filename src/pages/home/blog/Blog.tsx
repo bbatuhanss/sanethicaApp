@@ -1,55 +1,55 @@
 import React from "react";
 import styles from "./blog.module.css";
-import blog1 from "../../../assets/images/one.png";
-import blog2 from "../../../assets/images/two.png";
-import blog3 from "../../../assets/images/three1.png";
-import blog4 from "../../../assets/images/four.png";
-import blog5 from "../../../assets/images/five.png";
-import blog6 from "../../../assets/images/six.png";
 import { Link } from "react-router-dom";
 
 const articles = [
   {
-    title: "Glutensiz Beslenme Rehberi",
-    desc: "Glutensiz yaşam tarzına geçerken dikkat edilmesi gerekenler.",
-    image: blog1,
-    slug: "glutensiz-beslenme-rehberi",
-    tag: "Beslenme",
-  },
-  {
-    title: "Bölgesel İncelme Nedir?",
-    desc: "Smash, lenf drenaj, G5 ve diğer incelme yöntemleri hakkında.",
-    image: blog2,
-    slug: "bolgesel-incelme-nedir",
+    title: "Bölgesel İncelme Nasıl Çalışır?",
+    desc: "EmShape, G5 ve lenf drenaj teknolojileriyle hedef bölgede kalıcı sonuçlar.",
+    image:
+      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80",
+    slug: "bolgesel-incelme-nasil-calisir",
     tag: "Estetik",
   },
   {
-    title: "Aralıklı Oruç: Faydaları ve Dikkat Edilmesi Gerekenler",
-    desc: "Intermittent fasting modelinin vücuda etkileri ve doğru uygulama.",
-    image: blog3,
-    slug: "aralikli-oruc-nedir",
+    title: "EmShape Nedir? Kimler İçin Uygundur?",
+    desc: "Elektromanyetik kas stimülasyonu ile yağ yakımı ve kas gelişimi.",
+    image:
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80",
+    slug: "emshape-nedir",
+    tag: "Cihaz Teknolojisi",
+  },
+  {
+    title: "Lenf Drenaj Masajının Faydaları",
+    desc: "Ödem, yorgunluk ve selülit için masaj yöntemi.",
+    image:
+      "https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=600&q=80",
+    slug: "lenf-drenaj-faydalari",
+    tag: "Masaj",
+  },
+  {
+    title: "Wellness Nedir? Neden Önemlidir?",
+    desc: "Bütünsel yaklaşımla beden, zihin ve ruh dengesi.",
+    image:
+      "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=600&q=80",
+    slug: "wellness-nedir",
     tag: "Wellness",
   },
   {
-    title: "Bağışıklık Sistemi İçin Beslenme",
-    desc: "Hastalıklara karşı koruyucu gücü artıran vitamin ve mineraller.",
-    image: blog4,
-    slug: "bagisiklik-icin-beslenme",
-    tag: "Beslenme",
+    desc: "Ödem, yorgunluk ve selülit için etkili masaj yöntemi.",
+    title: "Selülitle Baş Etmenin Etkili Yolları",
+    image:
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80",
+    slug: "selulit-ile-bas-etme",
+    tag: "Estetik",
   },
   {
-    title: "Duygusal Yeme ve Stresle Başa Çıkma",
-    desc: "Stres anında kontrolsüz yeme isteğinin nedenleri ve çözüm yolları.",
-    image: blog5,
-    slug: "duygusal-yeme-ve-stres",
+    title: "Ozon Sauna: Detoks ve Dolaşım Desteği",
+    desc: "Ozon terapisinin vücuda etkileri ve uygulama süreci.",
+    image:
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80",
+    slug: "ozon-sauna-nedir",
     tag: "Wellness",
-  },
-  {
-    title: "Vejetaryen Beslenmede Protein Kaynakları",
-    desc: "Yeterli protein alımı için bitkisel besin alternatifleri.",
-    image: blog6,
-    slug: "vejetaryen-protein-kaynaklari",
-    tag: "Beslenme",
   },
 ];
 
@@ -59,9 +59,11 @@ const Blog = () => (
       <div className={styles.header}>
         <span className={styles.tag}>Blog</span>
         <h2 className={styles.title}>
-          Sağlıklı yaşam <em>rehberi</em>
+          Beauty & Wellness <em>rehberi</em>
         </h2>
-        <p className={styles.subtitle}>Wellness içerikleri.</p>
+        <p className={styles.subtitle}>
+          Uzmanlarımızdan estetik, cihaz teknolojisi ve wellness içerikleri.
+        </p>
       </div>
 
       <div className={styles.grid}>

@@ -9,7 +9,7 @@ const Footer = () => (
       <div className={styles.brand}>
         <img src={logo} alt="Sanethica" className={styles.logo} />
         <p className={styles.tagline}>
-          Sağlıklı yaşamı bilim, etik ve bütünsel yaklaşımla sunuyoruz.
+          Güzelliği etik ve bütünsel yaklaşımla sunuyoruz.
         </p>
 
         <a
@@ -26,7 +26,6 @@ const Footer = () => (
         <h4>Hizmetler</h4>
         <Link to="/hizmetler/incelme">Bölgesel İncelme</Link>
         <Link to="/hizmetler/wellness">Wellness</Link>
-        <Link to="/article">Blog & Makaleler</Link>
       </div>
 
       <div className={styles.col}>

@@ -162,7 +162,7 @@ const MassagePage = () => {
             </p>
             <p>
               Lenfödem, lipödem, kronik ağrılar ve postüral sorunlara karşı
-              bilimsel ve etkili bir yaklaşım sunuyoruz.
+              profesyonel ve etkili bir yaklaşım sunuyoruz.
             </p>
           </div>
         </section>

@@ -10,167 +10,178 @@ import blog9 from "../../assets/images/nine.png";
 
 export const articles = [
   {
-    slug: "glutensiz-beslenme-rehberi",
-    title: "Glutensiz Beslenme Rehberi",
+    slug: "bolgesel-incelme-nasil-calisir",
+    title: "Bölgesel İncelme Nasıl Çalışır?",
     content: `
-      <p>Glutensiz beslenme, özellikle çölyak hastaları ve gluten hassasiyeti olan bireyler için hayati önem taşır. Bununla birlikte, son yıllarda genel sağlık motivasyonlarıyla da bu beslenme tarzı tercih edilmektedir.</p>
-      <h3>Gluten Nedir?</h3>
-      <p>Gluten; buğday, arpa, çavdar gibi tahıllarda bulunan bir protein grubudur. Bağlayıcı özelliğiyle ekmek ve hamur işlerine kıvam kazandırır. Ancak bazı bireylerde sindirim sorunlarına ve bağışıklık sisteminin anormal tepkilerine yol açabilir.</p>
-      <h3>Glutensiz Beslenme Kimler İçin Uygundur?</h3>
+      <p>Bölgesel incelme uygulamaları, vücudun belirli bölgelerindeki yağ dokusunu hedef alarak sıkılaşma ve şekillendirme sağlayan profesyonel yöntemlerdir.</p>
+      <h3>Kimler İçin Uygundur?</h3>
+      <p>Genel kilosu normal olmasına rağmen bölgesel yağlanma yaşayan bireyler için idealdir. Doğum sonrası vücut şekillendirme veya selülit görünümünü azaltmak isteyenler için de etkili sonuçlar sunar.</p>
+      <h3>Hangi Teknolojiler Kullanılır?</h3>
       <ul>
-        <li>Çölyak hastalığı teşhisi konmuş bireyler</li>
-        <li>Non-çölyak gluten hassasiyeti olanlar</li>
-        <li>Buğday alerjisi olan bireyler</li>
-        <li>Fonksiyonel sindirim sistemi sorunları yaşayan bireyler</li>
+        <li><strong>EmShape:</strong> Yüksek yoğunluklu elektromanyetik enerjiyle kas stimülasyonu ve yağ yakımı sağlar.</li>
+        <li><strong>G5 Masajı:</strong> Mekanik titreşimlerle derin dokuya etki eder, selülit görünümünü azaltır.</li>
+        <li><strong>Lenf Drenaj:</strong> Ödem ve toksinleri atarak dolaşımı hızlandırır.</li>
+        <li><strong>Ozon Sauna:</strong> Deri altı dolaşımını destekler, detoks sağlar.</li>
       </ul>
-      <h3>Alternatif Tahıllar ve Ürünler</h3>
-      <p>Glutensiz beslenmede kullanılabilecek alternatifler arasında karabuğday, kinoa, mısır unu, pirinç, nohut unu ve teff yer alır. Bu tahıllar hem besleyici hem de glutensizdir.</p>
-      <h3>Etiket Okuma Alışkanlığı</h3>
-      <p>"Glutensiz" ibaresi taşıyan ürünler tercih edilmeli, içerik listelerinde gizli gluten kaynaklarına (malt, soya sosu, modifiye nişasta gibi) dikkat edilmelidir.</p>
-      <h3>Dikkat Edilmesi Gerekenler</h3>
-      <ul>
-        <li>Yeterli lif alımını sağlamak için sebze ve baklagiller tüketilmelidir.</li>
-        <li>B vitaminleri eksikliği yaşanmaması için beslenme dengelenmelidir.</li>
-        <li>Glutensiz beslenmenin kilo kaybı garantilemediği unutulmamalıdır.</li>
-      </ul>
-      <p>Sanethica olarak, glutensiz beslenmeye geçiş sürecinde doğru kaynaklarla ve kişisel ihtiyaçlara özel yönlendirmelerle yanınızdayız.</p>
+      <h3>Kaç Seans Gerekir?</h3>
+      <p>Ortalama 8–12 seans ile belirgin fark gözlemlenir. Kişiye özel program ve düzenli bakımla sonuçlar kalıcı hâle gelir.</p>
+      <p>Sanethica olarak her danışanımız için özel protokol oluşturuyor, süreci yakından takip ediyoruz.</p>
     `,
     image: blog1,
   },
   {
-    slug: "bolgesel-incelme-nedir",
-    title: "Bölgesel İncelme Nedir?",
+    slug: "emshape-nedir",
+    title: "EmShape Nedir? Kimler İçin Uygundur?",
     content: `
-      <p>Bölgesel incelme; vücudun belirli bölgelerinde biriken yağların azaltılması, cilt altı dolaşımın artırılması ve şekillendirme amacıyla uygulanan yöntemlerin bütünüdür.</p>
-      <h3>Kimler Tercih Etmeli?</h3>
-      <p>Genel kilosu normal olmasına rağmen bölgesel yağlanma yaşayan bireyler için idealdir. Doğum sonrası vücut şekillendirme veya selülit görünümünü azaltmak isteyenler için de uygundur.</p>
-      <h3>Uygulama Yöntemleri</h3>
+      <p>EmShape, yüksek yoğunluklu elektromanyetik enerji kullanarak kasları güçlendiren ve yağ dokusunu azaltan gelişmiş bir estetik cihazdır.</p>
+      <h3>Nasıl Çalışır?</h3>
+      <p>Cihaz, tek bir seansta binlerce kas kasılmasına eşdeğer uyarım sağlar. Bu sayede kas kütlesi artarken bölgesel yağ oranı düşer. Seans süresince herhangi bir ağrı hissedilmez.</p>
+      <h3>Hangi Bölgelere Uygulanır?</h3>
       <ul>
-        <li><strong>Smash Therapy:</strong> Ses dalgaları ile yağ hücrelerini parçalayarak bölgesel incelmeyi destekler.</li>
-        <li><strong>Lenf Drenaj:</strong> Vücuttaki ödemi ve toksinleri atarak dolaşımı hızlandırır.</li>
-        <li><strong>G5 Masajı:</strong> Mekanik titreşimlerle derin dokuya masaj yapılır, kan dolaşımı artar ve selülit görünümü azalabilir.</li>
+        <li>Karın ve bel bölgesi sıkılaştırma</li>
+        <li>Kalça kaldırma ve şekillendirme</li>
+        <li>Bacak ve uyluk bölgesi</li>
+        <li>Kol sıkılaştırma</li>
       </ul>
-      <h3>Unutulmaması Gereken Noktalar</h3>
-      <p>Bölgesel incelme tek başına zayıflama yöntemi değildir. Uygulamalar dengeli beslenme ve egzersizle desteklenmelidir. Her bireyin vücut yapısı farklı olduğundan, kişiye özel planlama şarttır.</p>
+      <h3>Kaç Seans Önerilir?</h3>
+      <p>Genellikle haftada 2 seans, toplam 4–8 seans program olarak planlanır. Sonuçlar 2–4 hafta içinde belirginleşmeye başlar.</p>
+      <p>Sanethica'da EmShape seansları uzman gözetiminde, kişiye özel program dahilinde uygulanmaktadır.</p>
     `,
     image: blog2,
   },
   {
-    slug: "aralikli-oruc-nedir",
-    title: "Aralıklı Oruç: Faydaları ve Dikkat Edilmesi Gerekenler",
+    slug: "lenf-drenaj-faydalari",
+    title: "Lenf Drenaj Masajının Faydaları",
     content: `
-      <p>Aralıklı oruç, günün belirli saatlerinde yemek yeme ve kalan sürede oruç tutma düzenine dayanan bir beslenme şeklidir. Hem kilo kontrolü hem de metabolik sağlık açısından etkili olabilir.</p>
-      <h3>Popüler Oruç Modelleri</h3>
+      <p>Lenf drenaj masajı, lenf sistemini uyararak vücuttaki fazla sıvının ve toksinlerin atılmasına yardımcı olan özel bir masaj tekniğidir.</p>
+      <h3>Faydaları Nelerdir?</h3>
       <ul>
-        <li>16:8 yöntemi</li>
-        <li>5:2 diyeti</li>
-        <li>OMAD (günde tek öğün)</li>
+        <li>Ödem ve şişliği hızla azaltır</li>
+        <li>Dolaşımı canlandırır</li>
+        <li>Bağışıklık sistemini destekler</li>
+        <li>Selülit görünümünü iyileştirir</li>
+        <li>Genel yorgunluk ve ağırlık hissini giderir</li>
       </ul>
-      <h3>Faydaları</h3>
+      <h3>Kimler Tercih Etmeli?</h3>
       <ul>
-        <li>İnsülin seviyelerinde denge</li>
-        <li>Otofaji (hücre temizliği) aktivasyonu</li>
-        <li>Yağ yakımının artması</li>
+        <li>Bacak ve ayak ödemi yaşayanlar</li>
+        <li>Estetik operasyon sonrası iyileşme sürecindekiler</li>
+        <li>Lipödem veya lenfödem tanısı olanlar</li>
+        <li>Yoğun tempolu yaşam nedeniyle kronik yorgunluk hissedenleri</li>
       </ul>
-      <p>Ancak, her birey için uygun olmayabilir. Sanethica olarak, kişisel sağlık öykünüz doğrultusunda aralıklı oruç uygulamasını değerlendiriyoruz.</p>
+      <h3>Ne Sıklıkla Yapılmalı?</h3>
+      <p>Haftada 1–2 seans, düzenli uygulamayla en etkin sonuçlar elde edilir. Sanethica'da deneyimli terapistlerimiz, vücut analizinize göre lenf drenaj protokolünüzü belirler.</p>
     `,
     image: blog3,
   },
   {
-    slug: "bagisiklik-icin-beslenme",
-    title: "Bağışıklık Sistemi İçin Beslenme Tüyoları",
+    slug: "selulit-ile-bas-etme",
+    title: "Selülitle Baş Etmenin Etkili Yolları",
     content: `
-      <p>Güçlü bir bağışıklık sistemi, enfeksiyonlara karşı en büyük savunmamızdır. Dengeli beslenme, vitamin-mineral desteği ve düzenli yaşam alışkanlıkları bu savunmayı destekler.</p>
+      <p>Selülit, yağ dokusunun deri altında birikmesiyle oluşan ve pek çok kadında görülen yaygın bir estetik sorundur. Genetik, hormonal değişimler ve hareketsiz yaşam tarzı en önemli etkenler arasındadır.</p>
+      <h3>Hangi Uygulamalar Etkilidir?</h3>
       <ul>
-        <li>C vitamini, D vitamini ve çinko gibi takviyeler bağışıklık hücrelerinin fonksiyonlarını artırır.</li>
-        <li>Mevsim sebzeleri, probiyotik kaynaklar (kefir, yoğurt), tam tahıllar günlük öğünlerde yer almalıdır.</li>
-        <li>Rafine şeker ve aşırı yağ tüketiminden kaçınılmalıdır.</li>
+        <li><strong>G5 Mekanik Masaj:</strong> Doku sıkılaştırma ve kan dolaşımını artırma</li>
+        <li><strong>Lenf Drenaj:</strong> Toksin atımı ve ödem giderme</li>
+        <li><strong>EmShape:</strong> Derin kas çalıştırma ve bölgesel yağ azaltma</li>
+        <li><strong>Ozon Sauna:</strong> Deri altı dolaşım desteği ve arınma</li>
       </ul>
+      <h3>Kalıcı Sonuç İçin Ne Yapılmalı?</h3>
+      <p>Düzenli seans programı ve aktif yaşam tarzı kombinasyonu, selülit görünümünü belirgin şekilde azaltır. Tek seferlik uygulamalardan ziyade düzenli bakım protokolü çok daha etkilidir.</p>
+      <p>Sanethica'da uzmanlarımız vücut analizinize göre size özel selülit tedavi protokolü belirler.</p>
     `,
     image: blog4,
   },
   {
-    slug: "duygusal-yeme-ve-stres",
-    title: "Duygusal Yeme ve Stresle Baş Etme Yolları",
+    slug: "wellness-nedir",
+    title: "Wellness Nedir? Neden Önemlidir?",
     content: `
-      <p>Duygusal yeme; stres, öfke, kaygı gibi duygusal tepkilerin yemekle bastırılmasıdır. Aç olunmasa bile yemek yeme davranışı tetiklenebilir.</p>
-      <h3>Belirtiler</h3>
+      <p>Wellness, bedensel sağlığın ötesine geçen; zihinsel denge, duygusal huzur ve yaşam kalitesini kapsayan bütünsel bir yaklaşımdır.</p>
+      <h3>Wellness Kapsamında Neler Var?</h3>
       <ul>
-        <li>Aniden ortaya çıkan yeme isteği</li>
-        <li>Yemek sonrası suçluluk hissi</li>
-        <li>Belirli ruh hallerinde aşırı yeme</li>
+        <li>Stres yönetimi ve derin rahatlama teknikleri</li>
+        <li>Detoks ve arınma programları</li>
+        <li>Cilt bakımı ve estetik uygulamalar</li>
+        <li>Yaşam tarzı düzenlemeleri</li>
       </ul>
-      <h3>Başa Çıkma Yöntemleri</h3>
-      <ul>
-        <li>Duygusal tetikleyicileri tanımak</li>
-        <li>Günlük tutmak</li>
-        <li>Uzman desteği almak</li>
-      </ul>
+      <h3>Sanethica'da Wellness</h3>
+      <p>Merkezimizde wellness; bölgesel incelme, masaj ve cihaz teknolojisiyle birleştirilerek kişiye özel, bütünsel bir program olarak sunulmaktadır. Her danışanımız için ayrı bir yol haritası çiziyoruz.</p>
+      <p>Kendinize en değerli yatırımı yapmak için doğru adrestesiniz.</p>
     `,
     image: blog5,
   },
   {
-    slug: "vejetaryen-protein-kaynaklari",
-    title: "Vejetaryen Beslenmede Protein Kaynakları",
+    slug: "masaj-turleri",
+    title: "Masaj Türleri ve Faydaları",
     content: `
-      <p>Vejetaryen bireyler için yeterli protein alımı mümkündür ancak planlama gerektirir.</p>
-      <h3>Bitkisel Protein Kaynakları</h3>
+      <p>Masaj, kas ve doku gerginliğini gidererek kan dolaşımını artıran, hem bedensel hem zihinsel iyilik hâlini destekleyen köklü bir terapi yöntemidir.</p>
+      <h3>Sanethica'da Uygulanan Masaj Türleri</h3>
       <ul>
-        <li>Baklagiller (nohut, mercimek, fasulye)</li>
-        <li>Kinoa, yulaf, bulgur</li>
-        <li>Soya ürünleri (tofu, tempeh)</li>
-        <li>Kuruyemişler ve tohumlar</li>
+        <li><strong>Lenfödem Masajı:</strong> Lenf sistemini uyararak ödem ve şişliği azaltır.</li>
+        <li><strong>Lipödem Masajı:</strong> Yağ dokusundaki anormal birikimi hedef alarak rahatlama sağlar.</li>
+        <li><strong>Selülit Masajı:</strong> Deri altı doku yapısını iyileştirerek portakal kabuğu görünümünü azaltır.</li>
       </ul>
-      <p>Farklı protein kaynaklarının kombinasyonu ile tüm temel amino asitler alınabilir.</p>
+      <h3>Masaj Ne Sıklıkla Yapılmalı?</h3>
+      <p>Hedef ve vücut tipine göre değişmekle birlikte, haftada 1–2 seans düzenli program en etkin sonuçları verir. İlk seanstan itibaren gevşeme ve hafiflik hissi başlar.</p>
+      <p>Sanethica'da tüm masaj uygulamaları deneyimli terapistler tarafından, kişiye özel protokolle yapılmaktadır.</p>
     `,
     image: blog6,
   },
   {
-    slug: "metabolizma-hizlandirma-yollari",
-    title: "Metabolizmayı Hızlandırmanın Doğal Yolları",
+    slug: "ozon-sauna-nedir",
+    title: "Ozon Sauna: Detoks ve Dolaşım Desteği",
     content: `
-      <p>Metabolizma hızı, günlük enerji tüketimini ve yağ yakımını etkiler. Sağlıklı alışkanlıklarla desteklenebilir.</p>
+      <p>Ozon sauna, vücudu ozonla zenginleştirilmiş buhar ortamına maruz bırakarak derin arınma, dolaşım desteği ve cilt yenilenmesi sağlayan modern bir wellness uygulamasıdır.</p>
+      <h3>Faydaları Nelerdir?</h3>
       <ul>
-        <li>Düzenli fiziksel aktivite (yürüyüş, direnç egzersizleri)</li>
-        <li>Yeterli su tüketimi</li>
-        <li>Protein açısından zengin beslenme</li>
-        <li>Yeşil çay, acı biber, zencefil gibi termojenik gıdalar</li>
+        <li>Deri altı dolaşımını canlandırır</li>
+        <li>Toksin atımını hızlandırır</li>
+        <li>Selülit ve ödem görünümünü azaltır</li>
+        <li>Cilt dokusunu sıkılaştırır ve parlaklık kazandırır</li>
+        <li>Genel enerji düzeyini artırır</li>
       </ul>
-      <p>Yeterli uyku ve stres yönetimi de metabolizmanın düzgün işlemesi için kritiktir.</p>
+      <h3>Kimler Yararlanabilir?</h3>
+      <p>Kronik yorgunluk, ödem, bölgesel yağlanma ve cilt sorunları yaşayan bireyler için uygundur. Bölgesel incelme programlarıyla birlikte uygulandığında sonuçları güçlendirir.</p>
+      <p>Sanethica'da ozon sauna, kişiye özel wellness programının tamamlayıcı bir parçası olarak uygulanmaktadır.</p>
     `,
     image: blog7,
   },
   {
-    slug: "detoks-diyetleri-ise-yariyor-mu",
-    title: "Detoks Diyetleri Gerçekten İşe Yarıyor mu?",
+    slug: "guzellik-rutini-nasil-olusturulur",
+    title: "Kişiye Özel Güzellik Rutini Nasıl Oluşturulur?",
     content: `
-      <p>Detoks diyetleri genellikle vücudu toksinlerden arındırmak için önerilir. Ancak vücudun bu süreci böbrek ve karaciğer sayesinde doğal olarak gerçekleştirdiği unutulmamalıdır.</p>
-      <h3>Yaygın Hatalar</h3>
+      <p>Her vücut yapısı, cilt tipi ve yaşam tarzı birbirinden farklıdır. Bu nedenle "herkese uyan tek rutin" diye bir şey yoktur; doğru rutin, sizi tanıyan uzmanlarla birlikte şekillenir.</p>
+      <h3>Güzellik Rutininin Temel Bileşenleri</h3>
       <ul>
-        <li>Uzun süreli açlık veya sıvı detokslar</li>
-        <li>Besin değeri düşük diyet planları</li>
+        <li><strong>Cihaz Destekli Uygulamalar:</strong> EmShape, G5, ozon sauna gibi teknolojiler hedefe göre seçilir.</li>
+        <li><strong>Masaj Terapisi:</strong> Lenf drenaj veya selülit masajı haftalık programa eklenir.</li>
+        <li><strong>Wellness Desteği:</strong> Stres yönetimi ve yaşam tarzı düzenlemeleri rutinin ayrılmaz parçasıdır.</li>
       </ul>
-      <h3>Alternatif Yaklaşımlar</h3>
-      <ul>
-        <li>Lifli gıdalar, bol su, bitki çayları</li>
-        <li>İşlenmiş gıdalardan uzak durmak</li>
-      </ul>
+      <h3>Nereden Başlamalı?</h3>
+      <p>İlk adım, bir uzmanla kapsamlı bir ön görüşme yapmaktır. Vücut analizi, hedefleriniz ve mevcut durumunuz değerlendirilerek size özel yol haritası çizilir.</p>
+      <p>Sanethica'da ücretsiz ön görüşme ile kişiye özel programınızı birlikte planlıyoruz.</p>
     `,
     image: blog8,
   },
   {
-    slug: "su-tuketimi-ve-zayiflama",
-    title: "Su Tüketiminin Zayıflama Üzerindeki Rolü",
+    slug: "estetik-uygulamalarda-sikca-sorulan-sorular",
+    title: "Estetik Uygulamalarda Sıkça Sorulan Sorular",
     content: `
-      <p>Su, metabolizmanın temel taşıdır. Yağ yakımı, sindirim, hücre yenilenmesi gibi birçok sürecin sağlıklı işleyişi için gereklidir.</p>
-      <h3>Su Tüketiminin Etkileri</h3>
+      <p>Bölgesel incelme ve wellness uygulamalarına başlamadan önce aklınızdaki soru işaretlerini giderelim.</p>
+      <h3>Uygulamalar Ağrılı mıdır?</h3>
+      <p>EmShape, lenf drenaj ve G5 gibi uygulamalar konforlu bir şekilde gerçekleştirilir. Seans sırasında hafif basınç veya titreşim hissedilebilir, ancak ağrı yaşanmaz.</p>
+      <h3>Sonuçlar Ne Zaman Görülür?</h3>
+      <p>Uygulamaya ve kişiye göre değişmekle birlikte, genellikle 3–5 seanstan itibaren ilk değişimler fark edilmeye başlanır.</p>
+      <h3>Sonuçlar Kalıcı mıdır?</h3>
+      <p>Düzenli bakım ve aktif yaşam tarzıyla sonuçlar uzun süreli olabilir. Uzmanlarımız size özel idame programı önerir.</p>
+      <h3>Kimler Uygulama Yaptırmamalıdır?</h3>
       <ul>
-        <li>Tokluk hissi sağlayarak aşırı yeme davranışını azaltır</li>
-        <li>Metabolizmayı canlandırır</li>
-        <li>Ödem atımını destekler</li>
+        <li>Hamile bireyler</li>
+        <li>Kalp pili kullananlar</li>
+        <li>Aktif enfeksiyon bölgesi olanlar</li>
       </ul>
-      <p>Günlük su ihtiyacı kişiye göre değişse de ortalama 2-2.5 litre su tüketimi önerilir.</p>
+      <p>Her uygulamadan önce uzmanlarımız kapsamlı bir değerlendirme yaparak size en uygun protokolü belirler.</p>
     `,
     image: blog9,
-  }
+  },
 ];

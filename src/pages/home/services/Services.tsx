@@ -1,10 +1,8 @@
 import React from "react";
 import styles from "./services.module.css";
-import dietImg from "../../../assets/images/dietimage.png";
 import bodyImg from "../../../assets/images/bodyimage.png";
 import wellnessImg from "../../../assets/images/wellnessimage.png";
 import message from "../../../assets/images/massage.png";
-
 import { Link } from "react-router-dom";
 
 const services = [
@@ -26,14 +24,13 @@ const services = [
     points: ["Stres yönetimi", "Detoks programları", "Yaşam tarzı koçluğu"],
     link: "/hizmetler/wellness",
   },
-
   {
     image: message,
     tag: "Masaj",
     title: "Masaj Uygulamaları",
     description:
-      "Ağrı yönetimi, dolaşım iyileştirmesi sağlama, ödem giderilmesi, dolaşım desteklenmesi ",
-    points: [" Lenfödem masajı ", "Lipödem masajı", "Selülit masajı "],
+      "Ağrı yönetimi, dolaşım iyileştirmesi sağlama, ödem giderilmesi, dolaşım desteklenmesi.",
+    points: ["Lenfödem masajı", "Lipödem masajı", "Selülit masajı"],
     link: "/hizmetler/massage",
   },
 ];

@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header/header";
 import Home from "./pages/home/home";
 import About from "./pages/about/about";
-import Article from "pages/article/article";
-import DiyetPage from "pages/services/DiyetPage";
 import IncelmePage from "pages/services/IncelmePage";
 import WellnessPage from "pages/services/WellnessPage";
 import MessagePage from "pages/services/MassagePage";
@@ -15,10 +13,8 @@ import WhatsappButton from "components/whatsappButton/WhatsappButton";
 import MaintenancePage from "pages/maintenance/MaintenancePage";
 
 const MAINTENANCE_MODE = false;
+
 function App() {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -26,6 +22,7 @@ function App() {
   if (MAINTENANCE_MODE) {
     return <MaintenancePage />;
   }
+
   return (
     <Router>
       <div
@@ -36,9 +33,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/article" element={<Article />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/hizmetler/diyet" element={<DiyetPage />} />
             <Route path="/hizmetler/incelme" element={<IncelmePage />} />
             <Route path="/hizmetler/wellness" element={<WellnessPage />} />
             <Route path="/hizmetler/massage" element={<MessagePage />} />

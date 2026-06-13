@@ -11,18 +11,18 @@ const AboutSection = () => (
       >
         <div className={styles.card}>
           <div className={styles.cardGrid} />
-          <span className={styles.cardLeaf}>🌿</span>
+          <span className={styles.cardLeaf}>✨</span>
           <blockquote className={styles.quote}>
-            "Sağlık; kilo değil,
+            "Güzellik; dışarıdan değil,
             <br />
-            denge ve huzurdur."
+            içeriden gelir."
           </blockquote>
           <span className={styles.quoteBy}>— Sanethica Felsefesi</span>
 
           <div className={styles.cardStats}>
             {[
               { v: "1000+", l: "Danışan" },
-              { v: "%98", l: "Başarı" },
+              { v: "%98", l: "Memnuniyet" },
             ].map((s, i) => (
               <React.Fragment key={i}>
                 <div className={styles.cStat}>
@@ -49,33 +49,33 @@ const AboutSection = () => (
       >
         <span className={styles.tag}>Hakkımızda</span>
         <h2 className={styles.title}>
-          Sağlığınız için
+          Güzelliğiniz için
           <br />
           <em>doğru adres</em>
         </h2>
         <p className={styles.desc}>
-          Sanethica, 2025 yılında sağlıklı yaşamı yalnızca kilo vermekle değil;
-          beden, zihin ve ruh bütünlüğüyle mümkün olan bir denge olarak
-          tanımlayan bir vizyon etrafında kuruldu. Uzman kadromuz ve etik
-          yaklaşımımızla her danışanımıza özel program sunuyoruz.
+          Sanethica, 2025 yılında güzelliği yalnızca görünüşle değil; beden,
+          zihin ve özgüven bütünlüğüyle tanımlayan bir vizyon etrafında kuruldu.
+          Uzman kadromuz ve son teknoloji cihazlarımızla her danışanımıza özel
+          deneyim sunuyoruz.
         </p>
 
         <div className={styles.feats}>
           {[
             {
-              icon: "🎓",
+              icon: "💎",
               t: "Uzman Kadro",
-              d: "Köklü üniversite mezunu diyetisyenler ve alanında profesyonel güzellik uzmanları",
+              d: "Alanında uzman estetik ve wellness profesyonelleri",
             },
             {
               icon: "🔬",
-              t: "Bilimsel Yaklaşım",
-              d: "Kanıta dayalı, güncel beslenme bilimi",
+              t: "İleri Teknoloji",
+              d: "Son teknoloji cihazlar ve güncel estetik yöntemler",
             },
             {
-              icon: "💚",
+              icon: "✨",
               t: "Kişiye Özel",
-              d: "Sizin için hazırlanan, sürdürülebilir plan",
+              d: "Sizin için tasarlanan, sonuç odaklı program",
             },
           ].map((h, i) => (
             <div key={i} className={styles.feat}>

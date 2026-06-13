@@ -156,13 +156,13 @@ const IncelmePage = () => {
             <span className={styles.tag}>Sorun Nedir?</span>
             <h2>Inatçı Yağlar & Selülit</h2>
             <p>
-              Bazı vücut bölgelerindeki yağ birikintileri, ne kadar diyet
-              yapsanız ne kadar antrenman yapsanız, genetik yapı ve hormonel
+              Bazı vücut bölgelerindeki inatçı yağ birikintileri, düzenli
+              egzersiz ve aktif yaşam tarzına rağmen genetik yapı ve hormonal
               faktörler nedeniyle uzaklaşmayabilir.
             </p>
             <p>
-              Çözümü: Bilimsel teknoloji ve profesyonel tedavilerle inatçı
-              yağlardan kurtulun.
+              Çözümü: İleri teknoloji cihazlar ve profesyonel uygulamalarla
+              inatçı yağlardan kurtulun.
             </p>
           </div>
         </section>

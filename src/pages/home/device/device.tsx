@@ -82,7 +82,7 @@ const videos = [
     poster: "/video/thumbs/1.png",
     label: "Etkili Cihazlar",
     tag: "Cihaz",
-    description: "Zayıflamayı destekleyen cihaz ve tekniklerin sunumu.",
+    description: "Bölgesel incelmeyi destekleyen cihaz ve tekniklerin sunumu.",
     bullets: ["Yeni nesil cihazlar", "Hızlı sonuç", "Destekleyici uygulamalar"],
   },
 ];

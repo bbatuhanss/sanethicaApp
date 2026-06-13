@@ -6,7 +6,7 @@ import logo from "../../../assets/images/main_logo.png";
 const stats = [
   { val: "1000+", label: "Mutlu Danışan" },
   { val: "3", label: "Hizmet Alanı" },
-  { val: "%98", label: "Başarı Oranı" },
+  { val: "%98", label: "Memnuniyet" },
 ];
 
 const Hero = () => (
@@ -35,17 +35,18 @@ const Hero = () => (
 
         <div className={styles.badge}>
           <span className={styles.badgeDot} />
-          Wellness · Bölgesel İncelme
+          Beauty · Wellness · Bölgesel İncelme
         </div>
 
         <h1 className={styles.title}>
-          Yeni bir yaşam
+          Kendinize en güzel
           <br />
-          <em>Sanethica ile başlıyor</em>
+          <em>yatırımı yapın</em>
         </h1>
 
         <p className={styles.sub}>
-          Bedeninizi, zihninizi ve ruhunuzu bir bütün olarak ele alıyoruz.
+          Bedeninizi en iyi hâline kavuşturmak için buradayız. Cihaz
+          teknolojisi, masaj ve wellness — tek çatı altında.
         </p>
 
         <div className={styles.ctas}>

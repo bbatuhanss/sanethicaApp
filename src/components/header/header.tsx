@@ -6,7 +6,6 @@ import { Link, useLocation } from "react-router-dom";
 const links = [
   { to: "/", label: "Anasayfa" },
   { to: "/about", label: "Hakkımızda" },
-  { to: "/article", label: "Makaleler" },
   { to: "/contact", label: "İletişim" },
 ];
 
