@@ -7,7 +7,7 @@ const articles = [
     title: "Bölgesel İncelme Nasıl Çalışır?",
     desc: "EmShape, G5 ve lenf drenaj teknolojileriyle hedef bölgede kalıcı sonuçlar.",
     image:
-      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1768479619859-8ee2556a04b1?auto=format&fit=crop&w=600&q=80",
     slug: "bolgesel-incelme-nasil-calisir",
     tag: "Estetik",
   },
@@ -15,7 +15,7 @@ const articles = [
     title: "EmShape Nedir? Kimler İçin Uygundur?",
     desc: "Elektromanyetik kas stimülasyonu ile yağ yakımı ve kas gelişimi.",
     image:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1717500251979-8a53b300d88b?auto=format&fit=crop&w=600&q=80",
     slug: "emshape-nedir",
     tag: "Cihaz Teknolojisi",
   },
@@ -36,8 +36,8 @@ const articles = [
     tag: "Wellness",
   },
   {
-    desc: "Ödem, yorgunluk ve selülit için etkili masaj yöntemi.",
     title: "Selülitle Baş Etmenin Etkili Yolları",
+    desc: "Ödem, yorgunluk ve selülit için etkili masaj yöntemi.",
     image:
       "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80",
     slug: "selulit-ile-bas-etme",
