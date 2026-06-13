@@ -5,7 +5,7 @@ import logo from "../../../assets/images/main_logo.png";
 
 const stats = [
   { val: "1000+", label: "Mutlu Danışan" },
-  { val: "4", label: "Hizmet Alanı" },
+  { val: "3", label: "Hizmet Alanı" },
   { val: "%98", label: "Başarı Oranı" },
 ];
 
@@ -35,7 +35,7 @@ const Hero = () => (
 
         <div className={styles.badge}>
           <span className={styles.badgeDot} />
-          Klinik Beslenme · Wellness · Bölgesel İncelme
+          Wellness · Bölgesel İncelme
         </div>
 
         <h1 className={styles.title}>
@@ -45,8 +45,7 @@ const Hero = () => (
         </h1>
 
         <p className={styles.sub}>
-          Uzman diyetisyen kadrosu ve bilimsel yaklaşımımızla bedeninizi,
-          zihninizi ve ruhunuzu bir bütün olarak ele alıyoruz.
+          Bedeninizi, zihninizi ve ruhunuzu bir bütün olarak ele alıyoruz.
         </p>
 
         <div className={styles.ctas}>

@@ -9,19 +9,6 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
-    image: dietImg,
-    tag: "Beslenme",
-    title: "Bireysel Diyet Desteği",
-    description:
-      "Metabolik analizinize dayanan, yaşam tarzınıza uygun kişisel beslenme programları.",
-    points: [
-      "İnsülin direnci & metabolik sağlık",
-      "Kilo yönetimi",
-      "Klinik beslenme",
-    ],
-    link: "/hizmetler/diyet",
-  },
-  {
     image: bodyImg,
     tag: "Estetik",
     title: "Bölgesel İncelme",
@@ -60,7 +47,7 @@ const Services = () => (
           Size özel <em>çözümler</em>
         </h2>
         <p className={styles.subtitle}>
-          Dört temel alanda uzman kadromuzla yanınızdayız.
+          Üç temel alanda uzman kadromuzla yanınızdayız.
         </p>
       </div>
 

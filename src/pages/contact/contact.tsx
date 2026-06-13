@@ -4,7 +4,6 @@ import styles from "./contact.module.css";
 import Footer from "components/footer/footer";
 import Reviews from "components/reviews/reviews";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
   const [form, setForm] = useState({
@@ -19,8 +18,7 @@ const Contact: React.FC = () => {
     { label: "Firma Adı", value: "Sanethica" },
     {
       label: "Firma Resmi Adı",
-      value:
-        "Sanethica Sağlıklı Yaşam Beslenme ve Diyet Danışmanlığı Limited Şirketi",
+      value: "Sanethica Beauty&Wellness",
     },
     {
       label: "Telefon",

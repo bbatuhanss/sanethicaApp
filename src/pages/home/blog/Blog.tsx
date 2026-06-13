@@ -61,9 +61,7 @@ const Blog = () => (
         <h2 className={styles.title}>
           Sağlıklı yaşam <em>rehberi</em>
         </h2>
-        <p className={styles.subtitle}>
-          Uzmanlarımızdan güncel beslenme ve wellness içerikleri.
-        </p>
+        <p className={styles.subtitle}>Wellness içerikleri.</p>
       </div>
 
       <div className={styles.grid}>

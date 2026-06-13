@@ -14,7 +14,7 @@ import Contact from "pages/contact/contact";
 import WhatsappButton from "components/whatsappButton/WhatsappButton";
 import MaintenancePage from "pages/maintenance/MaintenancePage";
 
-const MAINTENANCE_MODE = true;
+const MAINTENANCE_MODE = false;
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });

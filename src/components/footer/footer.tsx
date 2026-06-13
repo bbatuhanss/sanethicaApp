@@ -24,7 +24,6 @@ const Footer = () => (
 
       <div className={styles.col}>
         <h4>Hizmetler</h4>
-        <Link to="/hizmetler/diyet">Bireysel Diyet</Link>
         <Link to="/hizmetler/incelme">Bölgesel İncelme</Link>
         <Link to="/hizmetler/wellness">Wellness</Link>
         <Link to="/article">Blog & Makaleler</Link>
