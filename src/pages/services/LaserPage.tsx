@@ -134,8 +134,8 @@ const LaserPage = () => {
       <Helmet>
         <title>Alby Pro Diode Lazer Epilasyon | Sanethica</title>
         <meta
-          name="description"
-          content="Sanethica’da Alby Pro Diode Laser ile yapay zeka destekli, konforlu ve kişiye özel lazer epilasyon uygulamaları."
+          name="keywords"
+          content="lazer epilasyon, diode lazer, kalıcı tüy alma, güzellik salonu, Ataşehir lazer epilasyon"
         />
       </Helmet>
 

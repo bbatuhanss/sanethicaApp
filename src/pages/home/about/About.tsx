@@ -64,18 +64,18 @@ const AboutSection = () => (
           {[
             {
               icon: "💎",
-              t: "Profesyonel Kadro",
-              d: "Alanında profesyonel estetik  profesyonelleri",
+              t: "Deneyimli Ekip",
+              d: "Bakım ve estetik uygulamalarında özenli hizmet anlayışı",
             },
             {
               icon: "🔬",
-              t: "İleri Teknoloji",
-              d: "Son teknoloji cihazlar ve güncel estetik yöntemler",
+              t: "Cihaz Teknolojisi",
+              d: "Modern cihazlarla desteklenen uygulama seçenekleri",
             },
             {
               icon: "✨",
               t: "Kişiye Özel",
-              d: "Sizin için tasarlanan, sonuç odaklı program",
+              d: "İhtiyacınıza göre planlanan bakım süreci",
             },
           ].map((h, i) => (
             <div key={i} className={styles.feat}>

@@ -113,8 +113,8 @@ const MassagePage = () => {
       <Helmet>
         <title>Masaj Uygulamaları | Sanethica</title>
         <meta
-          name="description"
-          content="Terapötik masaj, lenfödem, lipödem ve spor masajı uygulamaları ile ağrı yönetimi ve rahatlık."
+          name="keywords"
+          content="masaj, lenfödem masajı, lipödem masajı, selülit masajı, lenf drenaj, güzellik salonu masaj"
         />
       </Helmet>
 

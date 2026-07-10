@@ -4,6 +4,7 @@ import styles from "./contact.module.css";
 import Footer from "components/footer/footer";
 import Reviews from "components/reviews/reviews";
 import { ToastContainer, toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const Contact: React.FC = () => {
   const [form, setForm] = useState({
@@ -76,6 +77,17 @@ const Contact: React.FC = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>İletişim | Sanethica Beauty</title>
+        <meta
+          name="description"
+          content="Sanethica Beauty ile iletişime geçin. Bölgesel incelme, lazer epilasyon, cilt bakımı ve masaj hizmetleri için randevu alın. Ataşehir, İstanbul."
+        />
+        <meta
+          name="keywords"
+          content="Sanethica iletişim, güzellik salonu randevu, Ataşehir güzellik salonu, lazer epilasyon randevu"
+        />
+      </Helmet>
       <section className={styles.contactSection}>
         <h2 className={styles.title}>İletişim</h2>
 

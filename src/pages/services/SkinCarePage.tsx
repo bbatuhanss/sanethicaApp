@@ -134,8 +134,8 @@ const SkinCarePage = () => {
       <Helmet>
         <title>Hydrafacial Sunshine With Camera | Sanethica</title>
         <meta
-          name="description"
-          content="Sanethica’da Hydrafacial Sunshine With Camera cihazı ile kameralı cilt analizi, hydradermabrazyon ve kişiye özel profesyonel cilt bakımı."
+          name="keywords"
+          content="cilt bakımı, hydrafacial, cilt analizi, anti-aging, leke bakımı, güzellik salonu cilt bakımı"
         />
       </Helmet>
 

@@ -12,14 +12,15 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Sanethica Beauty</title>
+        <title>Sanethica Beauty | Güzellik Salonu Ataşehir</title>
+
         <meta
-          name="description"
-          content="Sanethica ile güzelliğinizi keşfedin. Bölgesel incelme, masaj alanlarında profesyonel kadro ile yanınızdayız."
+          name="keywords"
+          content="Sanethica, güzellik salonu, bölgesel incelme, lazer epilasyon, cilt bakımı, masaj, EmShape, G5, lenf drenaj, ozon sauna, Ataşehir"
         />
         <meta
           name="keywords"
-          content="Sanethica, beauty, bölgesel incelme, masaj, estetik, İstanbul, Ataşehir"
+          content="Sanethica, güzellik salonu, bölgesel incelme, lazer epilasyon, cilt bakımı, masaj, Ataşehir"
         />
       </Helmet>
 

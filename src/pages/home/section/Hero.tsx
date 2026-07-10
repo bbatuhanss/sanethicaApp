@@ -5,7 +5,7 @@ import logo from "../../../assets/images/main_logo.png";
 
 const stats = [
   { val: "1000+", label: "Mutlu Müşteri" },
-  { val: "3", label: "Hizmet Alanı" },
+  { val: "4", label: "Hizmet Alanı" },
   { val: "%98", label: "Memnuniyet" },
 ];
 
@@ -35,7 +35,7 @@ const Hero = () => (
 
         <div className={styles.badge}>
           <span className={styles.badgeDot} />
-          Beauty · Bölgesel İncelme
+          Beauty · Shape
         </div>
 
         <h1 className={styles.title}>

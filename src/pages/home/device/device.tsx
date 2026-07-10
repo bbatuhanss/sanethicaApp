@@ -5,44 +5,82 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import styles from "./device.module.css";
 
-const videos = [
-  /*
-  {
-    src: "/video/biz.mp4",
-    poster: "/video/thumbs/4.png",
-    label: "Biz Kimiz?",
-    tag: "Tanıtım",
-    description: "Sanethica ekibini ve misyonumuzu daha yakından tanıyın.",
-    bullets: ["30-45 dk seans", "Hedef: incelme", "Müşteriye özel planlama"],
-  },
+interface VideoItem {
+  src: string;
+  poster: string;
+  label: string;
+  tag: string;
+  description: string;
+  bullets: string[];
+  price?: string;
+}
 
+const videos: VideoItem[] = [
   {
-    src: "/video/HAFTADA BELDEN 15 CM İNCELMEK MÜMKÜN.mp4",
-    poster: "/video/thumbs/4.png",
-    label: "15 cm İncelme",
-    tag: "Program",
-    description: "Düzenli seanslarla bel çevresinde gözle görülür incelme.",
-    bullets: ["Hedef: bel çevresi", "Haftalık takip", "Yoğun uygulama"],
+    src: "/video/lazer.mp4",
+    poster: "/video/thumbs/7.jpg",
+    label: "Lazer Epilasyon",
+    tag: "Lazer",
+    description:
+      "Alby Pro Diode Laser teknolojisiyle konforlu ve kişiye özel lazer epilasyon deneyimi.",
+    bullets: [
+      "-21°C başlık soğutması",
+      "Yapay zeka destekli analiz",
+      "FDA onaylı cihaz",
+    ],
   },
   {
-    src: "/video/ön görüşme ve muayene.mp4",
-    poster: "/video/thumbs/9.png",
-    label: "Ön Görüşme",
-    tag: "Süreç",
-    description: "Müşteri için kişisel analiz ve uygun program planlaması.",
-    bullets: ["İlk tanışma", "Detaylı analiz", "Kişiye özel plan"],
+    src: "/video/bakim.mp4",
+    poster: "/video/thumbs/8.jpg",
+    label: "Cilt Bakımı",
+    tag: "Cilt Bakımı",
+    description:
+      "Hydrafacial Sunshine With Camera cihazı ile kameralı cilt analizi ve profesyonel bakım süreci.",
+    bullets: ["Kameralı cilt analizi", "Hydradermabrazyon", "RF Eye & RF Face"],
   },
   {
-    src: "/video/TANITIM.mp4",
-    poster: "/video/thumbs/8.png",
-    label: "Tanıtım",
-    tag: "Tanıtım",
-    description: "Sanethica'yı ve sunduğumuz çözümleri tanıtan genel video.",
-    bullets: ["Kurumsal bakış", "Hizmetler tanıtım", "Güven & profesyonellik"],
-  },*/
+    src: "/video/bakim_indirim.mp4",
+    poster: "/video/thumbs/9.jpg",
+    label: "Cilt Bakımı Kampanyası",
+    tag: "Kampanya",
+    description: "Cilt bakımı uygulamamızı kampanyalı avantajlarla keşfedin.",
+    bullets: [
+      "Kameralı analiz",
+      "Kişiye özel bakım protokolü",
+      "Sınırlı süreli kampanya",
+    ],
+    price: "Kampanya",
+  },
+  {
+    src: "/video/lenf_indirim.mp4",
+    poster: "/video/thumbs/10.jpg",
+    label: "Lenf Drenaj Kampanyası",
+    tag: "Kampanya",
+    description:
+      "Lenf drenaj uygulamasıyla ödem görünümü, dolaşım desteği ve hafifleme hissi.",
+    bullets: [
+      "Ödem görünümüne destek",
+      "Dolaşım desteği",
+      "Sınırlı süreli kampanya",
+    ],
+    price: "Kampanya",
+  },
+  {
+    src: "/video/g5.mp4",
+    poster: "/video/thumbs/4.jpg",
+    label: "G5 Masajı",
+    tag: "Cihaz",
+    description:
+      "Titreşim destekli masaj etkisiyle hedef bölgede sıkılaşma ve selülit görünümüne destek.",
+    bullets: [
+      "Bölgesel dolaşım desteği",
+      "Selülit görünümüne destek",
+      "Sıkılaşma hissi",
+    ],
+  },
   {
     src: "/video/ZAYIFLAMADA ETKİLİ CİHAZLAR.mp4",
-    poster: "/video/thumbs/1.png",
+    poster: "/video/thumbs/1.jpg",
     label: "Etkili Cihazlar",
     tag: "Cihaz",
     description: "Bölgesel incelmeyi destekleyen cihaz ve tekniklerin sunumu.",
@@ -51,7 +89,7 @@ const videos = [
 
   {
     src: "/video/Lenf Drenaj.mp4",
-    poster: "/video/thumbs/3.png",
+    poster: "/video/thumbs/3.jpg",
     label: "Lenf Drenaj",
     tag: "Cihaz",
     description: "Vücutta sıvı dolaşımını düzenleyen detoks destekli uygulama.",
@@ -59,7 +97,7 @@ const videos = [
   },
   {
     src: "/video/EmShape.mp4",
-    poster: "/video/thumbs/5.png",
+    poster: "/video/thumbs/5.jpg",
     label: "EmShape",
     tag: "Cihaz",
     description: "Kas aktivasyonunu artırarak sıkılaşma sağlayan teknoloji.",
@@ -71,7 +109,7 @@ const videos = [
   },
   {
     src: "/video/G5 ve Smash.mp4",
-    poster: "/video/thumbs/3.png",
+    poster: "/video/thumbs/2.jpg",
     label: "G5 ve Smash",
     tag: "Cihaz",
     description: "Masaj ve mekanik titreşim ile bölgesel dolaşım desteği.",
@@ -83,7 +121,7 @@ const videos = [
   },
   {
     src: "/video/Ozon Sauna.mp4",
-    poster: "/video/thumbs/6.png",
+    poster: "/video/thumbs/6.jpg",
     label: "Ozon Sauna",
     tag: "Wellness",
     description: "Ozon terapisi ile detoks ve metabolizma hızlandırma.",
@@ -160,9 +198,10 @@ const Devices: React.FC = () => {
         {videos.map((v, idx) => (
           <SwiperSlide key={idx}>
             <div
-              className={styles.card}
+              className={`${styles.card} ${v.price ? styles.cardCampaign : ""}`}
               onClick={() => handleCardClick(idx, v)}
             >
+              {v.price && <span className={styles.priceBadge}>{v.price}</span>}
               <video
                 ref={(el) => {
                   if (el) hoverRefs.current[idx] = el;
@@ -201,6 +240,9 @@ const Devices: React.FC = () => {
             </button>
             <div className={styles.modalTag}>{active.tag}</div>
             <h3 className={styles.modalTitle}>{active.label}</h3>
+            {active.price && (
+              <div className={styles.modalPrice}>{active.price}</div>
+            )}
             <video
               ref={modalVideoRef}
               className={styles.bigVideo}
@@ -220,7 +262,7 @@ const Devices: React.FC = () => {
               ))}
             </div>
             <a href="/contact" className={styles.modalCta}>
-              Randevu Al →
+              {active.price ? `${active.price} · Randevu Al →` : "Randevu Al →"}
             </a>
           </div>
         </div>

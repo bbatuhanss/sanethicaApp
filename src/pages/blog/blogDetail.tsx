@@ -24,11 +24,17 @@ const BlogDetail = () => {
     );
   }
 
+  const plainDescription = blog.content
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 155);
+
   return (
     <>
       <Helmet>
         <title>{blog.title} | Sanethica</title>
-        <meta name="description" content={blog.title} />
+        <meta name="description" content={plainDescription} />
       </Helmet>
 
       <div className={styles.container}>

@@ -26,8 +26,8 @@ const Footer = () => (
         <h4>Hizmetler</h4>
         <Link to="/hizmetler/incelme">Bölgesel İncelme</Link>
         <Link to="/hizmetler/massage">Masaj Uygulamaları</Link>
-        <Link to="/hizmetler/lazer">Lazer Epilasyon </Link>
-        <Link to="/hizmetler/cilt-bakimi"> Profesyonel Cilt Bakımı</Link>
+        <Link to="/hizmetler/lazer">Lazer Epilasyon</Link>
+        <Link to="/hizmetler/cilt-bakimi">Profesyonel Cilt Bakımı</Link>
       </div>
 
       <div className={styles.col}>

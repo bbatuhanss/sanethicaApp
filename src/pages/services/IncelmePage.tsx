@@ -113,8 +113,8 @@ const IncelmePage = () => {
       <Helmet>
         <title>Bölgesel İncelme | Sanethica</title>
         <meta
-          name="description"
-          content="G5, EMShape, Ozon Sauna ve modern cihazlarla bölgesel yağ azaltma ve vücut şekillendirme."
+          name="keywords"
+          content="bölgesel incelme, EmShape, G5, lenf drenaj, ozon sauna, vücut şekillendirme, güzellik salonu"
         />
       </Helmet>
 

@@ -85,8 +85,8 @@ const About = () => {
       <Helmet>
         <title>Hakkımızda | Sanethica Beauty</title>
         <meta
-          name="description"
-          content="Sanethica profesyonel kadrosu ile bölgesel incelme, masaj programları sunar. Ataşehir, İstanbul."
+          name="keywords"
+          content="Sanethica hakkında, güzellik salonu Ataşehir, bölgesel incelme, masaj, profesyonel kadro"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap"
