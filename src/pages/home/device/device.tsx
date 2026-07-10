@@ -12,7 +12,6 @@ interface VideoItem {
   tag: string;
   description: string;
   bullets: string[];
-  price?: string;
 }
 
 const videos: VideoItem[] = [
@@ -39,33 +38,6 @@ const videos: VideoItem[] = [
     bullets: ["Kameralı cilt analizi", "Hydradermabrazyon", "RF Eye & RF Face"],
   },
   {
-    src: "/video/bakim_indirim.mp4",
-    poster: "/video/thumbs/9.jpg",
-    label: "Cilt Bakımı Kampanyası",
-    tag: "Kampanya",
-    description: "Cilt bakımı uygulamamızı kampanyalı avantajlarla keşfedin.",
-    bullets: [
-      "Kameralı analiz",
-      "Kişiye özel bakım protokolü",
-      "Sınırlı süreli kampanya",
-    ],
-    price: "Kampanya",
-  },
-  {
-    src: "/video/lenf_indirim.mp4",
-    poster: "/video/thumbs/10.jpg",
-    label: "Lenf Drenaj Kampanyası",
-    tag: "Kampanya",
-    description:
-      "Lenf drenaj uygulamasıyla ödem görünümü, dolaşım desteği ve hafifleme hissi.",
-    bullets: [
-      "Ödem görünümüne destek",
-      "Dolaşım desteği",
-      "Sınırlı süreli kampanya",
-    ],
-    price: "Kampanya",
-  },
-  {
     src: "/video/g5.mp4",
     poster: "/video/thumbs/4.jpg",
     label: "G5 Masajı",
@@ -84,7 +56,11 @@ const videos: VideoItem[] = [
     label: "Etkili Cihazlar",
     tag: "Cihaz",
     description: "Bölgesel incelmeyi destekleyen cihaz ve tekniklerin sunumu.",
-    bullets: ["Yeni nesil cihazlar", "Hızlı sonuç", "Destekleyici uygulamalar"],
+    bullets: [
+      "Yeni nesil cihazlar",
+      "Düzenli seans desteği",
+      "Destekleyici uygulamalar",
+    ],
   },
 
   {
@@ -93,7 +69,7 @@ const videos: VideoItem[] = [
     label: "Lenf Drenaj",
     tag: "Cihaz",
     description: "Vücutta sıvı dolaşımını düzenleyen detoks destekli uygulama.",
-    bullets: ["Ödem azaltma", "Bağışıklık desteği", "Dolaşımın hızlanması"],
+    bullets: ["Ödem azaltma", "Rahatlama desteği", "Dolaşımın hızlanması"],
   },
   {
     src: "/video/EmShape.mp4",
@@ -198,10 +174,9 @@ const Devices: React.FC = () => {
         {videos.map((v, idx) => (
           <SwiperSlide key={idx}>
             <div
-              className={`${styles.card} ${v.price ? styles.cardCampaign : ""}`}
+              className={styles.card}
               onClick={() => handleCardClick(idx, v)}
             >
-              {v.price && <span className={styles.priceBadge}>{v.price}</span>}
               <video
                 ref={(el) => {
                   if (el) hoverRefs.current[idx] = el;
@@ -240,9 +215,6 @@ const Devices: React.FC = () => {
             </button>
             <div className={styles.modalTag}>{active.tag}</div>
             <h3 className={styles.modalTitle}>{active.label}</h3>
-            {active.price && (
-              <div className={styles.modalPrice}>{active.price}</div>
-            )}
             <video
               ref={modalVideoRef}
               className={styles.bigVideo}
@@ -262,7 +234,7 @@ const Devices: React.FC = () => {
               ))}
             </div>
             <a href="/contact" className={styles.modalCta}>
-              {active.price ? `${active.price} · Randevu Al →` : "Randevu Al →"}
+              Randevu Al →
             </a>
           </div>
         </div>

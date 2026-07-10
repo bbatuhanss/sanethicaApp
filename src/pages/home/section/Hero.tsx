@@ -72,11 +72,6 @@ const Hero = () => (
           ))}
         </div>
       </div>
-
-      <div className={styles.scroll}>
-        <span>Keşfet</span>
-        <div className={styles.scrollLine} />
-      </div>
     </section>
   </>
 );

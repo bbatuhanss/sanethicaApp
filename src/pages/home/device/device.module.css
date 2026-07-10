@@ -86,37 +86,6 @@
   border-color: rgba(168, 200, 138, 0.22);
 }
 
-/* ── CAMPAIGN CARD ── */
-.cardCampaign {
-  border-color: rgba(224, 168, 76, 0.45);
-  box-shadow:
-    0 18px 40px rgba(0, 0, 0, 0.18),
-    0 0 0 1px rgba(224, 168, 76, 0.12);
-}
-
-.cardCampaign:hover {
-  border-color: rgba(224, 168, 76, 0.7);
-  box-shadow:
-    0 28px 60px rgba(0, 0, 0, 0.26),
-    0 0 0 1px rgba(224, 168, 76, 0.2);
-}
-
-.priceBadge {
-  position: absolute;
-  top: 0.9rem;
-  right: 0.9rem;
-  z-index: 2;
-  background: linear-gradient(135deg, #e0a84c, #c98a2c);
-  color: #201406;
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  padding: 0.36rem 0.85rem;
-  border-radius: 999px;
-  box-shadow: 0 8px 18px rgba(224, 168, 76, 0.35);
-}
-
 .video {
   width: 100%;
   height: 100%;
@@ -169,10 +138,6 @@
   text-transform: uppercase;
   color: #b9d79a;
   font-weight: 700;
-}
-
-.cardCampaign .cardTag {
-  color: #e0a84c;
 }
 
 .cardLabel {
@@ -299,19 +264,6 @@
   color: #f0ede6;
   margin: 0 0 1.4rem;
   line-height: 1.2;
-}
-
-.modalPrice {
-  display: inline-flex;
-  align-items: center;
-  background: linear-gradient(135deg, #e0a84c, #c98a2c);
-  color: #201406;
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  padding: 0.32rem 0.9rem;
-  border-radius: 999px;
-  margin: -0.8rem 0 1.4rem;
 }
 
 .bigVideo {

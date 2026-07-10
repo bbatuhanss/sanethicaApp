@@ -85,8 +85,12 @@ const About = () => {
       <Helmet>
         <title>Hakkımızda | Sanethica Beauty</title>
         <meta
+          name="description"
+          content="Sanethica Beauty, Ataşehir’de bölgesel incelme, lazer epilasyon, cilt bakımı ve masaj uygulamaları sunan bir güzellik merkezidir."
+        />
+        <meta
           name="keywords"
-          content="Sanethica hakkında, güzellik salonu Ataşehir, bölgesel incelme, masaj, profesyonel kadro"
+          content="Sanethica, Sanethica Beauty, güzellik salonu Ataşehir, bölgesel incelme, lazer epilasyon, cilt bakımı, masaj"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap"
@@ -115,8 +119,9 @@ const About = () => {
             </h1>
 
             <p className={styles.heroSub}>
-              Profesyonel kadromuzla bölgesel incelme, masaj hizmetlerini
-              estetik, etik ve özenli bir yaklaşımla sunuyoruz.
+              Bölgesel incelme, lazer epilasyon, cilt bakımı ve masaj
+              uygulamalarını estetik, özenli ve kişiye özel bir yaklaşımla
+              sunuyoruz.
             </p>
 
             <div className={styles.heroActions}>
@@ -212,7 +217,7 @@ const About = () => {
               <span className={styles.tag}>Ne Sunuyoruz?</span>
 
               <h2 className={styles.h2}>
-                Üç alanda <em>profesyonel hizmet</em>
+                Dört alanda <em>profesyonel hizmet</em>
               </h2>
 
               <p className={styles.teamSub}>
