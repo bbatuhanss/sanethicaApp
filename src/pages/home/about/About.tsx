@@ -21,7 +21,7 @@ const AboutSection = () => (
 
           <div className={styles.cardStats}>
             {[
-              { v: "1000+", l: "Danışan" },
+              { v: "1000+", l: "Müşteri" },
               { v: "%98", l: "Memnuniyet" },
             ].map((s, i) => (
               <React.Fragment key={i}>
@@ -56,16 +56,16 @@ const AboutSection = () => (
         <p className={styles.desc}>
           Sanethica, 2025 yılında güzelliği yalnızca görünüşle değil; beden,
           zihin ve özgüven bütünlüğüyle tanımlayan bir vizyon etrafında kuruldu.
-          Uzman kadromuz ve son teknoloji cihazlarımızla her danışanımıza özel
-          deneyim sunuyoruz.
+          Profesyonel kadromuz ve son teknoloji cihazlarımızla her müşterimize
+          özel deneyim sunuyoruz.
         </p>
 
         <div className={styles.feats}>
           {[
             {
               icon: "💎",
-              t: "Uzman Kadro",
-              d: "Alanında uzman estetik ve wellness profesyonelleri",
+              t: "Profesyonel Kadro",
+              d: "Alanında profesyonel estetik  profesyonelleri",
             },
             {
               icon: "🔬",

@@ -12,14 +12,14 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Sanethica Beauty & Wellness</title>
+        <title>Sanethica Beauty</title>
         <meta
           name="description"
-          content="Sanethica ile güzelliğinizi keşfedin. Bölgesel incelme, masaj ve wellness alanlarında uzman kadro ile yanınızdayız."
+          content="Sanethica ile güzelliğinizi keşfedin. Bölgesel incelme, masaj alanlarında profesyonel kadro ile yanınızdayız."
         />
         <meta
           name="keywords"
-          content="Sanethica, beauty, wellness, bölgesel incelme, masaj, estetik, İstanbul, Ataşehir"
+          content="Sanethica, beauty, bölgesel incelme, masaj, estetik, İstanbul, Ataşehir"
         />
       </Helmet>
 

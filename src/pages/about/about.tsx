@@ -11,13 +11,13 @@ const values = [
   },
   {
     icon: "◈",
-    label: "Uzman Dokunuş",
-    desc: "Tüm uygulamalarımız alanında deneyimli uzmanlar tarafından, güncel yöntemlerle yürütülür.",
+    label: "Profesyonel Dokunuş",
+    desc: "Tüm uygulamalarımız alanında deneyimli profesyoneller tarafından, güncel yöntemlerle yürütülür.",
   },
   {
     icon: "◇",
     label: "Kişisel Odak",
-    desc: "Her danışanın vücut yapısı, yaşam ritmi ve hedefi farklıdır; programlarımız da buna göre şekillenir.",
+    desc: "Her müşteri vücut yapısı, yaşam ritmi ve hedefi farklıdır; programlarımız da buna göre şekillenir.",
   },
   {
     icon: "◉",
@@ -39,14 +39,19 @@ const services = [
   },
   {
     icon: "✦",
-    label: "Wellness Programları",
-    desc: "Stres yönetimi, detoks ve yaşam tarzı düzenlemeleriyle bütünsel iyilik hâli.",
+    label: "Lazer Epilasyon",
+    desc: "Cilt tipine uygun planlama ile istenmeyen tüylerde konforlu ve etkili lazer epilasyon uygulamaları.",
+  },
+  {
+    icon: "✦",
+    label: "Cilt Bakımı",
+    desc: "Cilt analizine göre nem, leke, akne ve yaşlanma karşıtı destek sağlayan profesyonel bakım uygulamaları.",
   },
 ];
 
 const stats = [
-  { v: "1000+", l: "Mutlu Danışan" },
-  { v: "%98", l: "Danışan Memnuniyeti" },
+  { v: "1000+", l: "Mutlu Müşteri" },
+  { v: "%98", l: "Müşteri Memnuniyeti" },
 ];
 
 const storyMeta = [
@@ -78,10 +83,10 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Hakkımızda | Sanethica Beauty & Wellness</title>
+        <title>Hakkımızda | Sanethica Beauty</title>
         <meta
           name="description"
-          content="Sanethica uzman kadrosu ile bölgesel incelme, masaj ve kişiye özel wellness programları sunar. Ataşehir, İstanbul."
+          content="Sanethica profesyonel kadrosu ile bölgesel incelme, masaj programları sunar. Ataşehir, İstanbul."
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600;700&display=swap"
@@ -110,7 +115,7 @@ const About = () => {
             </h1>
 
             <p className={styles.heroSub}>
-              Uzman kadromuzla bölgesel incelme, masaj ve wellness hizmetlerini
+              Profesyonel kadromuzla bölgesel incelme, masaj hizmetlerini
               estetik, etik ve özenli bir yaklaşımla sunuyoruz.
             </p>
 
@@ -183,14 +188,14 @@ const About = () => {
               <p>
                 Sanethica, 2025 yılında güzelliği yalnızca görünüşle değil;
                 beden, zihin ve özgüven bütünlüğüyle tanımlayan bir vizyon
-                etrafında kuruldu. Her danışanın kendini en iyi hissedebileceği
+                etrafında kuruldu. Her müşterinin kendini en iyi hissedebileceği
                 bir alan yaratmak için yola çıktık.
               </p>
 
               <p>
                 "Sante" sağlık, "Ethica" ise etik yaklaşımı temsil eder.
-                Ataşehir'deki merkezimizde son teknoloji cihazlar ve uzman
-                dokunuşla her danışanımıza özel bir dönüşüm deneyimi sunuyoruz.
+                Ataşehir'deki merkezimizde son teknoloji cihazlar ve profesyonel
+                dokunuşla her müşterimize özel bir dönüşüm deneyimi sunuyoruz.
               </p>
 
               <a href="/contact" className={styles.btn}>
@@ -207,7 +212,7 @@ const About = () => {
               <span className={styles.tag}>Ne Sunuyoruz?</span>
 
               <h2 className={styles.h2}>
-                Üç alanda <em>uzman hizmet</em>
+                Üç alanda <em>profesyonel hizmet</em>
               </h2>
 
               <p className={styles.teamSub}>
@@ -282,8 +287,8 @@ const About = () => {
             </h2>
 
             <p>
-              İlk görüşme ile sürecinizi birlikte değerlendirelim, size en uygun
-              estetik ve wellness programını oluşturalım.
+              İİlk görüşmede ihtiyaçlarınızı birlikte analiz edelim, size özel
+              bakım ve güzellik sürecinizi planlayalım.
             </p>
 
             <div className={styles.ctaBtns}>
@@ -293,7 +298,7 @@ const About = () => {
             </div>
 
             <p className={styles.ctaNote}>
-              1000+ danışan deneyimi, etik yaklaşım ve kişiye özel planlama.
+              1000+ müşteri deneyimi, etik yaklaşım ve kişiye özel planlama.
             </p>
           </div>
         </section>

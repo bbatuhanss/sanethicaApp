@@ -2,7 +2,6 @@ import blog1 from "../../assets/images/one.png";
 import blog2 from "../../assets/images/two.png";
 import blog3 from "../../assets/images/three1.png";
 import blog4 from "../../assets/images/four.png";
-import blog5 from "../../assets/images/five.png";
 import blog6 from "../../assets/images/six.png";
 import blog7 from "../../assets/images/seven.png";
 import blog8 from "../../assets/images/eigth.png";
@@ -25,7 +24,7 @@ export const articles = [
       </ul>
       <h3>Kaç Seans Gerekir?</h3>
       <p>Ortalama 8–12 seans ile belirgin fark gözlemlenir. Kişiye özel program ve düzenli bakımla sonuçlar kalıcı hâle gelir.</p>
-      <p>Sanethica olarak her danışanımız için özel protokol oluşturuyor, süreci yakından takip ediyoruz.</p>
+      <p>Sanethica olarak her müşterimiz için özel protokol oluşturuyor, süreci yakından takip ediyoruz.</p>
     `,
     image: blog1,
   },
@@ -45,7 +44,7 @@ export const articles = [
       </ul>
       <h3>Kaç Seans Önerilir?</h3>
       <p>Genellikle haftada 2 seans, toplam 4–8 seans program olarak planlanır. Sonuçlar 2–4 hafta içinde belirginleşmeye başlar.</p>
-      <p>Sanethica'da EmShape seansları uzman gözetiminde, kişiye özel program dahilinde uygulanmaktadır.</p>
+      <p>Sanethica'da EmShape seansları profesyonel gözetiminde, kişiye özel program dahilinde uygulanmaktadır.</p>
     `,
     image: blog2,
   },
@@ -88,28 +87,11 @@ export const articles = [
       </ul>
       <h3>Kalıcı Sonuç İçin Ne Yapılmalı?</h3>
       <p>Düzenli seans programı ve aktif yaşam tarzı kombinasyonu, selülit görünümünü belirgin şekilde azaltır. Tek seferlik uygulamalardan ziyade düzenli bakım protokolü çok daha etkilidir.</p>
-      <p>Sanethica'da uzmanlarımız vücut analizinize göre size özel selülit tedavi protokolü belirler.</p>
+      <p>Sanethica'da profesyonellerimiz vücut analizinize göre size özel selülit tedavi protokolü belirler.</p>
     `,
     image: blog4,
   },
-  {
-    slug: "wellness-nedir",
-    title: "Wellness Nedir? Neden Önemlidir?",
-    content: `
-      <p>Wellness, bedensel sağlığın ötesine geçen; zihinsel denge, duygusal huzur ve yaşam kalitesini kapsayan bütünsel bir yaklaşımdır.</p>
-      <h3>Wellness Kapsamında Neler Var?</h3>
-      <ul>
-        <li>Stres yönetimi ve derin rahatlama teknikleri</li>
-        <li>Detoks ve arınma programları</li>
-        <li>Cilt bakımı ve estetik uygulamalar</li>
-        <li>Yaşam tarzı düzenlemeleri</li>
-      </ul>
-      <h3>Sanethica'da Wellness</h3>
-      <p>Merkezimizde wellness; bölgesel incelme, masaj ve cihaz teknolojisiyle birleştirilerek kişiye özel, bütünsel bir program olarak sunulmaktadır. Her danışanımız için ayrı bir yol haritası çiziyoruz.</p>
-      <p>Kendinize en değerli yatırımı yapmak için doğru adrestesiniz.</p>
-    `,
-    image: blog5,
-  },
+
   {
     slug: "masaj-turleri",
     title: "Masaj Türleri ve Faydaları",
@@ -150,7 +132,7 @@ export const articles = [
     slug: "guzellik-rutini-nasil-olusturulur",
     title: "Kişiye Özel Güzellik Rutini Nasıl Oluşturulur?",
     content: `
-      <p>Her vücut yapısı, cilt tipi ve yaşam tarzı birbirinden farklıdır. Bu nedenle "herkese uyan tek rutin" diye bir şey yoktur; doğru rutin, sizi tanıyan uzmanlarla birlikte şekillenir.</p>
+      <p>Her vücut yapısı, cilt tipi ve yaşam tarzı birbirinden farklıdır. Bu nedenle "herkese uyan tek rutin" diye bir şey yoktur; doğru rutin, sizi tanıyan profesyonellerimiz birlikte şekillenir.</p>
       <h3>Güzellik Rutininin Temel Bileşenleri</h3>
       <ul>
         <li><strong>Cihaz Destekli Uygulamalar:</strong> EmShape, G5, ozon sauna gibi teknolojiler hedefe göre seçilir.</li>
@@ -158,7 +140,7 @@ export const articles = [
         <li><strong>Wellness Desteği:</strong> Stres yönetimi ve yaşam tarzı düzenlemeleri rutinin ayrılmaz parçasıdır.</li>
       </ul>
       <h3>Nereden Başlamalı?</h3>
-      <p>İlk adım, bir uzmanla kapsamlı bir ön görüşme yapmaktır. Vücut analizi, hedefleriniz ve mevcut durumunuz değerlendirilerek size özel yol haritası çizilir.</p>
+      <p>İlk adım, bir profesyonelle kapsamlı bir ön görüşme yapmaktır. Vücut analizi, hedefleriniz ve mevcut durumunuz değerlendirilerek size özel yol haritası çizilir.</p>
       <p>Sanethica'da ücretsiz ön görüşme ile kişiye özel programınızı birlikte planlıyoruz.</p>
     `,
     image: blog8,
@@ -173,14 +155,14 @@ export const articles = [
       <h3>Sonuçlar Ne Zaman Görülür?</h3>
       <p>Uygulamaya ve kişiye göre değişmekle birlikte, genellikle 3–5 seanstan itibaren ilk değişimler fark edilmeye başlanır.</p>
       <h3>Sonuçlar Kalıcı mıdır?</h3>
-      <p>Düzenli bakım ve aktif yaşam tarzıyla sonuçlar uzun süreli olabilir. Uzmanlarımız size özel idame programı önerir.</p>
+      <p>Düzenli bakım ve aktif yaşam tarzıyla sonuçlar uzun süreli olabilir. Profesyonellerimiz size özel idame programı önerir.</p>
       <h3>Kimler Uygulama Yaptırmamalıdır?</h3>
       <ul>
         <li>Hamile bireyler</li>
         <li>Kalp pili kullananlar</li>
         <li>Aktif enfeksiyon bölgesi olanlar</li>
       </ul>
-      <p>Her uygulamadan önce uzmanlarımız kapsamlı bir değerlendirme yaparak size en uygun protokolü belirler.</p>
+      <p>Her uygulamadan önce profesyonellerimiz kapsamlı bir değerlendirme yaparak size en uygun protokolü belirler.</p>
     `,
     image: blog9,
   },

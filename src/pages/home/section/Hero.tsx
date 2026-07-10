@@ -4,7 +4,7 @@ import styles from "./hero.module.css";
 import logo from "../../../assets/images/main_logo.png";
 
 const stats = [
-  { val: "1000+", label: "Mutlu Danışan" },
+  { val: "1000+", label: "Mutlu Müşteri" },
   { val: "3", label: "Hizmet Alanı" },
   { val: "%98", label: "Memnuniyet" },
 ];
@@ -35,7 +35,7 @@ const Hero = () => (
 
         <div className={styles.badge}>
           <span className={styles.badgeDot} />
-          Beauty · Wellness · Bölgesel İncelme
+          Beauty · Bölgesel İncelme
         </div>
 
         <h1 className={styles.title}>
@@ -46,7 +46,7 @@ const Hero = () => (
 
         <p className={styles.sub}>
           Bedeninizi en iyi hâline kavuşturmak için buradayız. Cihaz
-          teknolojisi, masaj ve wellness — tek çatı altında.
+          teknolojisi, masaj — tek çatı altında.
         </p>
 
         <div className={styles.ctas}>

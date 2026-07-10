@@ -76,7 +76,7 @@ const MassagePage = () => {
       ],
     },
     {
-      title: "Estetik & Wellness",
+      title: "Estetik",
       items: [
         "Cilt elastikiyeti artırma",
         "Selülit görünümü azaltma",
@@ -128,8 +128,7 @@ const MassagePage = () => {
               Masaj <em>Uygulamaları</em>
             </h1>
             <p className={styles.heroSub}>
-              Ağrı yönetimi, dolaşım iyileştirmesi ve bütünsel wellness için
-              profesyonel masaj
+              Ağrı yönetimi, dolaşım iyileştirmesi için profesyonel masaj
             </p>
             <button
               className={styles.heroCta}
@@ -249,7 +248,7 @@ const MassagePage = () => {
             <h2>Ağrısız Yaşamı Bulun</h2>
             <p>
               Profesyonel masaj terapistlerimiz, kronik ağrılarınızı azaltmak ve
-              wellness yolculuğunuzu desteklemek için buradayız.
+              dolaşım iyileştirmek için buradayız.
             </p>
             <div className={styles.ctaButtons}>
               <button
@@ -262,7 +261,7 @@ const MassagePage = () => {
                 className={styles.secondaryBtn}
                 onClick={() => navigate("/about")}
               >
-                Uzmanlarımızı Tanıyın
+                Profesyonellerimizi Tanıyın
               </button>
             </div>
           </div>

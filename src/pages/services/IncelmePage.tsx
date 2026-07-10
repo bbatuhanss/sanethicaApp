@@ -273,7 +273,7 @@ const IncelmePage = () => {
                 className={styles.secondaryBtn}
                 onClick={() => navigate("/about")}
               >
-                Uzmanlarımızı Tanıyın
+                Profesyonellerimizi Tanıyın
               </button>
             </div>
           </div>

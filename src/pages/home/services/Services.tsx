@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./services.module.css";
 import bodyImg from "../../../assets/images/bodyimage.png";
-import wellnessImg from "../../../assets/images/wellnessimage.png";
 import message from "../../../assets/images/massage.png";
+import laserImg from "../../../assets/images/laser.png";
+import skinCareImg from "../../../assets/images/cilt.png";
 import { Link } from "react-router-dom";
 
 const services = [
@@ -15,23 +16,37 @@ const services = [
     points: ["EmShape & G5 uygulamaları", "Lenf drenaj", "Ozon sauna"],
     link: "/hizmetler/incelme",
   },
-  {
-    image: wellnessImg,
-    tag: "Wellness",
-    title: "Wellness Uygulamaları",
-    description:
-      "Zihin, beden ve ruh dengesini destekleyen bütünsel wellness çözümleri.",
-    points: ["Stres yönetimi", "Detoks programları", "Yaşam tarzı koçluğu"],
-    link: "/hizmetler/wellness",
-  },
+
   {
     image: message,
     tag: "Masaj",
     title: "Masaj Uygulamaları",
     description:
-      "Ağrı yönetimi, dolaşım iyileştirmesi sağlama, ödem giderilmesi, dolaşım desteklenmesi.",
+      "Ağrı yönetimi, ödem giderilmesi ve dolaşımın desteklenmesine yönelik profesyonel masaj uygulamaları.",
     points: ["Lenfödem masajı", "Lipödem masajı", "Selülit masajı"],
     link: "/hizmetler/massage",
+  },
+  {
+    image: laserImg,
+    tag: "Lazer",
+    title: "Lazer Epilasyon",
+    description:
+      "İstenmeyen tüylerde cilt tipine uygun planlama ile konforlu ve etkili lazer epilasyon uygulamaları.",
+    points: [
+      "Bölgeye özel uygulama",
+      "Cilt tipine uygun planlama",
+      "Konforlu seans süreci",
+    ],
+    link: "/hizmetler/lazer",
+  },
+  {
+    image: skinCareImg,
+    tag: "Cilt Bakımı",
+    title: "Profesyonel Cilt Bakımı",
+    description:
+      "Cilt analizine göre nem, leke, akne ve yaşlanma karşıtı destek sağlayan profesyonel bakım uygulamaları.",
+    points: ["Cilt analizi", "Nem & leke bakımı", "Anti-aging destek"],
+    link: "/hizmetler/cilt-bakimi",
   },
 ];
 
@@ -44,7 +59,8 @@ const Services = () => (
           Size özel <em>çözümler</em>
         </h2>
         <p className={styles.subtitle}>
-          Üç temel alanda uzman kadromuzla yanınızdayız.
+          Estetik, masaj, lazer ve cilt bakımı alanlarında profesyonel
+          kadromuzla yanınızdayız.
         </p>
       </div>
 
@@ -60,9 +76,11 @@ const Services = () => (
               <img src={s.image} alt={s.title} />
               <span className={styles.cardTag}>{s.tag}</span>
             </div>
+
             <div className={styles.cardBody}>
               <h3>{s.title}</h3>
               <p>{s.description}</p>
+
               <ul className={styles.cardPoints}>
                 {s.points.map((p, j) => (
                   <li key={j}>
@@ -71,6 +89,7 @@ const Services = () => (
                   </li>
                 ))}
               </ul>
+
               <Link to={s.link} className={styles.cardBtn}>
                 Detaylı İncele →
               </Link>

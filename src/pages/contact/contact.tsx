@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
     { label: "Firma Adı", value: "Sanethica" },
     {
       label: "Firma Resmi Adı",
-      value: "Sanethica Beauty&Wellness",
+      value: "Sanethica Beauty",
     },
     {
       label: "Telefon",

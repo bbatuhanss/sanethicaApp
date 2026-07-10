@@ -4,14 +4,14 @@ import Header from "./components/header/header";
 import Home from "./pages/home/home";
 import About from "./pages/about/about";
 import IncelmePage from "pages/services/IncelmePage";
-import WellnessPage from "pages/services/WellnessPage";
 import MessagePage from "pages/services/MassagePage";
 import AOS from "aos";
 import BlogDetail from "pages/blog/blogDetail";
 import Contact from "pages/contact/contact";
 import WhatsappButton from "components/whatsappButton/WhatsappButton";
 import MaintenancePage from "pages/maintenance/MaintenancePage";
-
+import LaserPage from "pages/services/LaserPage";
+import SkinCarePage from "pages/services/SkinCarePage";
 const MAINTENANCE_MODE = false;
 
 function App() {
@@ -35,8 +35,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/hizmetler/incelme" element={<IncelmePage />} />
-            <Route path="/hizmetler/wellness" element={<WellnessPage />} />
             <Route path="/hizmetler/massage" element={<MessagePage />} />
+            <Route path="/hizmetler/lazer" element={<LaserPage />} />
+            <Route path="/hizmetler/cilt-bakimi" element={<SkinCarePage />} />
             <Route path="/blog/:slug" element={<BlogDetail />} />
           </Routes>
           <WhatsappButton />

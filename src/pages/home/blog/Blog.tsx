@@ -2,52 +2,45 @@ import React from "react";
 import styles from "./blog.module.css";
 import { Link } from "react-router-dom";
 
+import bolgeselImg from "../../../assets/images/blog/bolgesel-incelme.png";
+import emshapeImg from "../../../assets/images/blog/emshape.png";
+import lenfImg from "../../../assets/images/blog/lenf-drenaj.png";
+import selulitImg from "../../../assets/images/blog/selulit.png";
+import ozonImg from "../../../assets/images/blog/ozon-sauna.png";
+
 const articles = [
   {
     title: "Bölgesel İncelme Nasıl Çalışır?",
-    desc: "EmShape, G5 ve lenf drenaj teknolojileriyle hedef bölgede kalıcı sonuçlar.",
-    image:
-      "https://images.unsplash.com/photo-1768479619859-8ee2556a04b1?auto=format&fit=crop&w=600&q=80",
+    desc: "EmShape, G5 ve lenf drenaj uygulamalarıyla hedef bölgede şekillenme ve sıkılaşma desteği.",
+    image: bolgeselImg,
     slug: "bolgesel-incelme-nasil-calisir",
     tag: "Estetik",
   },
   {
     title: "EmShape Nedir? Kimler İçin Uygundur?",
-    desc: "Elektromanyetik kas stimülasyonu ile yağ yakımı ve kas gelişimi.",
-    image:
-      "https://images.unsplash.com/photo-1717500251979-8a53b300d88b?auto=format&fit=crop&w=600&q=80",
+    desc: "Elektromanyetik kas stimülasyonu ile kas aktivasyonu ve bölgesel şekillendirme desteği.",
+    image: emshapeImg,
     slug: "emshape-nedir",
     tag: "Cihaz Teknolojisi",
   },
   {
     title: "Lenf Drenaj Masajının Faydaları",
-    desc: "Ödem, yorgunluk ve selülit için masaj yöntemi.",
-    image:
-      "https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=600&q=80",
+    desc: "Ödem, dolaşım desteği ve hafifleme hissi için profesyonel lenf drenaj uygulaması.",
+    image: lenfImg,
     slug: "lenf-drenaj-faydalari",
     tag: "Masaj",
   },
   {
-    title: "Wellness Nedir? Neden Önemlidir?",
-    desc: "Bütünsel yaklaşımla beden, zihin ve ruh dengesi.",
-    image:
-      "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=600&q=80",
-    slug: "wellness-nedir",
-    tag: "Wellness",
-  },
-  {
     title: "Selülitle Baş Etmenin Etkili Yolları",
-    desc: "Ödem, yorgunluk ve selülit için etkili masaj yöntemi.",
-    image:
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80",
+    desc: "G5, lenf drenaj, EmShape ve ozon sauna ile selülit görünümüne karşı destekleyici bakım.",
+    image: selulitImg,
     slug: "selulit-ile-bas-etme",
     tag: "Estetik",
   },
   {
     title: "Ozon Sauna: Detoks ve Dolaşım Desteği",
-    desc: "Ozon terapisinin vücuda etkileri ve uygulama süreci.",
-    image:
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80",
+    desc: "Ozon sauna ile arınma, rahatlama ve dolaşım desteği sağlayan wellness deneyimi.",
+    image: ozonImg,
     slug: "ozon-sauna-nedir",
     tag: "Wellness",
   },
@@ -62,7 +55,8 @@ const Blog = () => (
           Beauty & Wellness <em>rehberi</em>
         </h2>
         <p className={styles.subtitle}>
-          Uzmanlarımızdan estetik, cihaz teknolojisi ve wellness içerikleri.
+          Profesyonellerimizden estetik, cihaz teknolojisi ve wellness
+          içerikleri.
         </p>
       </div>
 
@@ -79,6 +73,7 @@ const Blog = () => (
               <img src={a.image} alt={a.title} />
               <span className={styles.cardTag}>{a.tag}</span>
             </div>
+
             <div className={styles.cardBody}>
               <h3>{a.title}</h3>
               <p>{a.desc}</p>

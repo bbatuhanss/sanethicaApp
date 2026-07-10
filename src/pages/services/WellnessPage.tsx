@@ -26,34 +26,14 @@ const WellnessPage = () => {
 
   const services = [
     {
-      icon: "🧘",
-      title: "Meditasyon & Nefes Terapileri",
-      desc: "Stres azaltma, zihinsel berraklık ve duygusal dengeyi hedefleyen rehberli meditasyon seansları",
-    },
-    {
-      icon: "🌿",
-      title: "Mindfulness Çalışmaları",
-      desc: "Anı yaşama, farkındalık ve benlik kabulu çalışmalarıyla yaşam kalitesini yükseltme",
-    },
-    {
       icon: "🌱",
       title: "Bitkisel Detokslar",
       desc: "Organik bitkilerin doğal temizleme etkisiyle vücut atıklarının zararsız uzaklaştırılması",
     },
     {
-      icon: "💧",
-      title: "İyonik Ayak Detoksu",
-      desc: "İyonik teknoloji ile lenfatik sistem aktivasyonu, ödemi azaltma ve enerji iyileştirme",
-    },
-    {
       icon: "⚡",
       title: "EMShape & Cihaz Terapileri",
       desc: "Elektromanyetik teknoloji ile metabolizm hızlandırma ve selülit azaltma",
-    },
-    {
-      icon: "🔥",
-      title: "Infrared Sauna Seansları",
-      desc: "Derinlemesine ısıtma, detoks, ağrı azaltma ve iyileştirme",
     },
   ];
 
@@ -216,7 +196,7 @@ const WellnessPage = () => {
                 className={styles.secondaryBtn}
                 onClick={() => navigate("/about")}
               >
-                Uzmanlarımızı Tanıyın
+                Profesyonellerimizi Tanıyın
               </button>
             </div>
           </div>

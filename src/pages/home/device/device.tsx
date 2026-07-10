@@ -1,17 +1,61 @@
 import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+// @ts-ignore: side-effect import has no type declarations in this project
 import "swiper/css";
 import styles from "./device.module.css";
 
 const videos = [
+  /*
   {
     src: "/video/biz.mp4",
     poster: "/video/thumbs/4.png",
     label: "Biz Kimiz?",
     tag: "Tanıtım",
     description: "Sanethica ekibini ve misyonumuzu daha yakından tanıyın.",
-    bullets: ["30-45 dk seans", "Hedef: incelme", "Danışana özel planlama"],
+    bullets: ["30-45 dk seans", "Hedef: incelme", "Müşteriye özel planlama"],
+  },
+
+  {
+    src: "/video/HAFTADA BELDEN 15 CM İNCELMEK MÜMKÜN.mp4",
+    poster: "/video/thumbs/4.png",
+    label: "15 cm İncelme",
+    tag: "Program",
+    description: "Düzenli seanslarla bel çevresinde gözle görülür incelme.",
+    bullets: ["Hedef: bel çevresi", "Haftalık takip", "Yoğun uygulama"],
+  },
+  {
+    src: "/video/ön görüşme ve muayene.mp4",
+    poster: "/video/thumbs/9.png",
+    label: "Ön Görüşme",
+    tag: "Süreç",
+    description: "Müşteri için kişisel analiz ve uygun program planlaması.",
+    bullets: ["İlk tanışma", "Detaylı analiz", "Kişiye özel plan"],
+  },
+  {
+    src: "/video/TANITIM.mp4",
+    poster: "/video/thumbs/8.png",
+    label: "Tanıtım",
+    tag: "Tanıtım",
+    description: "Sanethica'yı ve sunduğumuz çözümleri tanıtan genel video.",
+    bullets: ["Kurumsal bakış", "Hizmetler tanıtım", "Güven & profesyonellik"],
+  },*/
+  {
+    src: "/video/ZAYIFLAMADA ETKİLİ CİHAZLAR.mp4",
+    poster: "/video/thumbs/1.png",
+    label: "Etkili Cihazlar",
+    tag: "Cihaz",
+    description: "Bölgesel incelmeyi destekleyen cihaz ve tekniklerin sunumu.",
+    bullets: ["Yeni nesil cihazlar", "Hızlı sonuç", "Destekleyici uygulamalar"],
+  },
+
+  {
+    src: "/video/Lenf Drenaj.mp4",
+    poster: "/video/thumbs/3.png",
+    label: "Lenf Drenaj",
+    tag: "Cihaz",
+    description: "Vücutta sıvı dolaşımını düzenleyen detoks destekli uygulama.",
+    bullets: ["Ödem azaltma", "Bağışıklık desteği", "Dolaşımın hızlanması"],
   },
   {
     src: "/video/EmShape.mp4",
@@ -38,52 +82,12 @@ const videos = [
     ],
   },
   {
-    src: "/video/HAFTADA BELDEN 15 CM İNCELMEK MÜMKÜN.mp4",
-    poster: "/video/thumbs/4.png",
-    label: "15 cm İncelme",
-    tag: "Program",
-    description: "Düzenli seanslarla bel çevresinde gözle görülür incelme.",
-    bullets: ["Hedef: bel çevresi", "Haftalık takip", "Yoğun uygulama"],
-  },
-  {
-    src: "/video/Lenf Drenaj.mp4",
-    poster: "/video/thumbs/3.png",
-    label: "Lenf Drenaj",
-    tag: "Cihaz",
-    description: "Vücutta sıvı dolaşımını düzenleyen detoks destekli uygulama.",
-    bullets: ["Ödem azaltma", "Bağışıklık desteği", "Dolaşımın hızlanması"],
-  },
-  {
     src: "/video/Ozon Sauna.mp4",
     poster: "/video/thumbs/6.png",
     label: "Ozon Sauna",
     tag: "Wellness",
     description: "Ozon terapisi ile detoks ve metabolizma hızlandırma.",
     bullets: ["Toksin atımı", "Cilt sağlığı", "Rahatlama etkisi"],
-  },
-  {
-    src: "/video/ön görüşme ve muayene.mp4",
-    poster: "/video/thumbs/9.png",
-    label: "Ön Görüşme",
-    tag: "Süreç",
-    description: "Danışan için kişisel analiz ve uygun program planlaması.",
-    bullets: ["İlk tanışma", "Detaylı analiz", "Kişiye özel plan"],
-  },
-  {
-    src: "/video/TANITIM.mp4",
-    poster: "/video/thumbs/8.png",
-    label: "Tanıtım",
-    tag: "Tanıtım",
-    description: "Sanethica'yı ve sunduğumuz çözümleri tanıtan genel video.",
-    bullets: ["Kurumsal bakış", "Hizmetler tanıtım", "Güven & profesyonellik"],
-  },
-  {
-    src: "/video/ZAYIFLAMADA ETKİLİ CİHAZLAR.mp4",
-    poster: "/video/thumbs/1.png",
-    label: "Etkili Cihazlar",
-    tag: "Cihaz",
-    description: "Bölgesel incelmeyi destekleyen cihaz ve tekniklerin sunumu.",
-    bullets: ["Yeni nesil cihazlar", "Hızlı sonuç", "Destekleyici uygulamalar"],
   },
 ];
 
@@ -129,7 +133,7 @@ const Devices: React.FC = () => {
           Teknoloji ile <em>desteklenen</em> sonuçlar
         </h2>
         <p className={styles.subtitle}>
-          Sanethica’da uygulanan cihazları, süreçleri ve danışan deneyimini kısa
+          Sanethica’da uygulanan cihazları, süreçleri ve müşteri deneyimini kısa
           videolarla keşfedin.
         </p>
       </div>
