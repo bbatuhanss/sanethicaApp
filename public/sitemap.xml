@@ -1,11 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://www.sanethica.co/</loc>
-    <priority>1.00</priority>
   </url>
+
   <url>
     <loc>https://www.sanethica.co/about</loc>
-    <priority>0.80</priority>
   </url>
+
+  <url>
+    <loc>https://www.sanethica.co/contact</loc>
+  </url>
+
+  <url>
+    <loc>https://www.sanethica.co/hizmetler/incelme</loc>
+  </url>
+
+  <url>
+    <loc>https://www.sanethica.co/hizmetler/massage</loc>
+  </url>
+
+  <url>
+    <loc>https://www.sanethica.co/hizmetler/lazer</loc>
+  </url>
+
+  <url>
+    <loc>https://www.sanethica.co/hizmetler/cilt-bakimi</loc>
+  </url>
+
+  <url>
+    <loc>https://www.sanethica.co/blog/bolgesel-incelme-nasil-calisir</loc>
+  </url>
+
+  <url>
+    <loc>https://www.sanethica.co/blog/emshape-nedir</loc>
+  </url>
+
+  <url>
+    <loc>https://www.sanethica.co/blog/lenf-drenaj-faydalari</loc>
+  </url>
+
+  <url>
+    <loc>https://www.sanethica.co/blog/selulit-ile-bas-etme</loc>
+  </url>
+
+  <url>
+    <loc>https://www.sanethica.co/blog/masaj-turleri</loc>
+  </url>
+
+  <url>
+    <loc>https://www.sanethica.co/blog/ozon-sauna-nedir</loc>
+  </url>
+
+  <url>
+    <loc>https://www.sanethica.co/blog/guzellik-rutini-nasil-olusturulur</loc>
+  </url>
+
+  <url>
+    <loc>https://www.sanethica.co/blog/estetik-uygulamalarda-sikca-sorulan-sorular</loc>
+  </url>
+
 </urlset>
