@@ -5,6 +5,7 @@ import Footer from "components/footer/footer";
 import Reviews from "components/reviews/reviews";
 import { ToastContainer, toast } from "react-toastify";
 import { Helmet } from "react-helmet-async";
+import { trackEvent } from "../../utils/analytics";
 
 const Contact: React.FC = () => {
   const [form, setForm] = useState({
@@ -23,7 +24,19 @@ const Contact: React.FC = () => {
     },
     {
       label: "Telefon",
-      value: <a href="tel:+905384100034">+90 538 410 00 34</a>,
+      value: (
+        <a
+          href="tel:+905384100034"
+          onClick={() =>
+            trackEvent("phone_click", {
+              button_location: "contact_page",
+              page_path: window.location.pathname,
+            })
+          }
+        >
+          +90 538 410 00 34
+        </a>
+      ),
     },
     {
       label: "E-mail",
@@ -61,6 +74,11 @@ const Contact: React.FC = () => {
         },
         "zwlI8NPq6hjITQr4q",
       );
+      trackEvent("generate_lead", {
+        lead_source: "contact_form",
+        form_name: "contact_form",
+        page_path: window.location.pathname,
+      });
 
       toast.success("Mesajınız başarıyla gönderildi.");
       setForm({
@@ -89,7 +107,7 @@ const Contact: React.FC = () => {
         />
       </Helmet>
       <section className={styles.contactSection}>
-        <h2 className={styles.title}>İletişim</h2>
+        <h1 className={styles.title}>İletişim</h1>
 
         <div className={styles.table}>
           {info.map((row, i) => (

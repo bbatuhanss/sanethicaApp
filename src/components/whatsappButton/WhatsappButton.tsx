@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./wp.module.css";
+import { trackEvent } from "../../utils/analytics";
 
 const WhatsappButton: React.FC = () => {
   const phone = "905384100034";
@@ -11,6 +12,12 @@ const WhatsappButton: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer"
       className={styles.button}
+      onClick={() =>
+        trackEvent("whatsapp_click", {
+          button_location: "floating_whatsapp",
+          page_path: window.location.pathname,
+        })
+      }
     >
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"

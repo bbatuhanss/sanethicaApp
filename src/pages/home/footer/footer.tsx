@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./footer.module.css";
 import logo from "../../../assets/images/main_logo.png";
 import { Link } from "react-router-dom";
+import { trackEvent } from "utils/analytics";
 
 const Footer = () => (
   <footer className={styles.footer}>
@@ -41,7 +42,17 @@ const Footer = () => (
         <h4>İletişim</h4>
         <span>Metropol A Blok D:38</span>
         <span>Ataşehir / İstanbul</span>
-        <a href="tel:+905384100034">+90 538 410 00 34</a>
+        <a
+          href="tel:+905384100034"
+          onClick={() =>
+            trackEvent("phone_click", {
+              button_location: "footer",
+              page_path: window.location.pathname,
+            })
+          }
+        >
+          +90 538 410 00 34
+        </a>
         <a href="mailto:info@sanethica.co">info@sanethica.co</a>
       </div>
     </div>
